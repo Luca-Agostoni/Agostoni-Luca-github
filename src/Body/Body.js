@@ -1,5 +1,6 @@
-import './Body.css';
-import {Pages} from './Pages/Pages'
+import './Body.css'; 
+import {Pages} from './Pages/Pages';
+import {Table} from './Table/Table';
 
 export const Body = () => {
     return(
@@ -7,6 +8,7 @@ export const Body = () => {
             <div className="TotRepos">
                 Totale repos: 10
             </div>
+            <Table/>
             <Pages/>
         </div>
     );

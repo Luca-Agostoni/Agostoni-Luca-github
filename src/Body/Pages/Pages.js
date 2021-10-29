@@ -8,7 +8,7 @@ export const Pages = () => {
                     
                 </li>
                 <li className="liPagesButtonsCells">
-                    <a href="App.js">
+                    <a className="nextAndBack" href="App.js">
                         <div className="button">Precedente</div>
                     </a> 
                 </li>
@@ -18,7 +18,7 @@ export const Pages = () => {
                     </div>
                 </li>
                 <li className="liPagesButtonsCells">
-                    <a href="App.js">
+                    <a className="nextAndBack" href="App.js">
                         <div className="button">Successivo</div>
                     </a>
                 </li>

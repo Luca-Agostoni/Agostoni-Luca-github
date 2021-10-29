@@ -1,15 +1,16 @@
 .formLinks{
     width: 90%;
-    height: 60%;
     border: green solid 1px;
     margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
-a{
+.link{
     font-size: 16px;
     color: black;
 }
-a.checked{
+.link:visisted{
     color: black;
 }

@@ -34,11 +34,8 @@
     background-color: white;
     border: royalblue solid 1px;
 }
-a:link {
+.nextAndBack{
     text-decoration: none;
   }
-  
-  a:visited {
-    text-decoration: none;
-  }
+
   
