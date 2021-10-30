@@ -12,7 +12,7 @@ export const Table = () => {
                         <li className="liTableHeader1">Nome repo</li>
                         <li className="liTableHeader1">Totale commit</li>
                         <li className="liTableHeader1">Data creazione</li>
-                        <li className="liTableHeader1">Ultimo aggiornamento</li>
+                        <li className="liTableHeader1final">Ultimo aggiornamento</li>
                     </ul>
                 </li>
                 <li className="liTable2">

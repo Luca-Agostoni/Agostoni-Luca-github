@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "name":"Luca",
+            "surname": "Agostoni",
+            "username": "Luca-Agostoni",
+            "repostiorie": "Agostoni-Luca-github"
+        },
+        {
+            "name":"Kevin",
+            "surname": "Galasso",
+            "username": "kevin-galasso01",
+            "repostiorie": "galasso-kevin-github"
+        }
+    ]
+}
