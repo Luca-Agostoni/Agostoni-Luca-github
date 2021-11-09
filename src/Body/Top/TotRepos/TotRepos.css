@@ -1,0 +1,10 @@
+.TotRepos{
+    width: 70%;
+    height: 20px;
+    margin-top: 10px;
+    padding-top: 2px;
+    margin-left: 6%;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border: green solid 1px;
+}

@@ -1,16 +1,32 @@
+
 {
-    "users": [
-        {
-            "name":"Luca",
-            "surname": "Agostoni",
-            "username": "Luca-Agostoni",
-            "repostiorie": "Agostoni-Luca-github"
-        },
-        {
-            "name":"Kevin",
-            "surname": "Galasso",
-            "username": "kevin-galasso01",
-            "repostiorie": "galasso-kevin-github"
-        }
-    ]
-}
+    "dataUser": [
+            {
+                "surname": "Silipigni",
+                "name": "Gabriele",
+                "login": "gabrysili",
+                "repos": [
+                    "https://api.github.com/repos/gabrysili/silipigni-gabriele-github"
+                ],
+                "class": "Full-Stack-Developer 2020/2021"
+            },
+            {
+                "surname": "Fabros",
+                "name": "Mark",
+                "login": "markfabros",
+                "repos":[
+                    "https://api.github.com/repos/markfabros/fabros-mark-github"
+                ],
+                "class":"Full Stack Developer 2021-2022"
+            },
+            {
+                "surname": "Agostoni",
+                "name":"Luca",
+                "login": "Luca-Agostoni",
+                "repos": [
+                    "https://api.github.com/repos/Luca-Agostoni/Agostoni-Luca-github"
+                ],
+                "class": "Full-Stack-Developer 2020/2021"
+            }
+        ]
+    }

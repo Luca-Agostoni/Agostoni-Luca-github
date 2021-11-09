@@ -1,0 +1,12 @@
+.divSelection{
+    width: 80%;
+    border:sandybrown solid 1px;
+    margin-top: 10px;
+}
+.selectionClass{
+    width: 72%;
+    border:gray solid 1px;
+    margin-left: 10px;
+    margin: 6px;
+    height: 20px;   
+}

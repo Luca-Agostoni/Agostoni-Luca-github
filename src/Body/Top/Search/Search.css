@@ -1,0 +1,11 @@
+.divSearch{
+    width: 80%;
+    border:sandybrown solid 1px;
+    margin-top: 10px;
+}
+.searchBar{
+    width: 72%;
+    border:gray solid 1px;
+    margin-left: 10px;
+    margin: 6px;
+}
