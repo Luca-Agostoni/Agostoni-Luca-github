@@ -2,6 +2,7 @@
 {
     "dataUser": [
             {
+                "id": 0,
                 "surname": "Silipigni",
                 "name": "Gabriele",
                 "login": "gabrysili",
@@ -11,6 +12,7 @@
                 "class": "Full-Stack-Developer 2020/2021"
             },
             {
+                "id": 1,
                 "surname": "Fabros",
                 "name": "Mark",
                 "login": "markfabros",
@@ -20,6 +22,7 @@
                 "class":"Full Stack Developer 2021-2022"
             },
             {
+                "id": 2,
                 "surname": "Agostoni",
                 "name":"Luca",
                 "login": "Luca-Agostoni",

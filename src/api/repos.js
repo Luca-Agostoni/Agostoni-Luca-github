@@ -13,10 +13,12 @@ const merge = () => {
 
             gitData.filter(data => data.url === repo).forEach(filtered =>{ 
                 const result = {
+                                    id: user.id,
                                     surname: user.surname,
                                     name: user.name,
                                     login: user.login,
                                     repositorie_name: filtered.name,
+                                    repositorie_url: filtered.html_url,
                                     creation_date: filtered.created_at,
                                     update_date: filtered.updated_at,
                                 };                

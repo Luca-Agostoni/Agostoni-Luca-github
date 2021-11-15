@@ -1,9 +1,9 @@
 import './TotRepos.css';
 
-export const TotRepos = () => {
+export const TotRepos = (props) => {
     return(
         <div className="TotRepos">
-            Totale repos: 10
+            Totale repos: {props.totRepos}
         </div>
     );
 }
