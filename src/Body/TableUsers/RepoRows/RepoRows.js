@@ -5,29 +5,23 @@ import './RepoRows.css';
 export const RepoRows = (props) => {
 
     const [showDetails, setShowDetails] = useState(false);
+    const linkName = props.repositorie_name;
 
-
-    const repo = props.dataRows;
-
-    const repoList = repo.map(
-        (repos)=>{
-
-        const linkName = repos.repositorie_name;
-        return(
+    return(
             <div>
                 <li className="liTable2">
                     <ul className="ulTableHeader2">
                         <li className="liTableHeader2">
-                            {repos.surname}
+                            {props.surname}
                         </li>
                         <li className="liTableHeader2">
-                            {repos.name}
+                            {props.name}
                         </li>
                         <li className="liTableHeader2">
-                            {repos.login}
+                            {props.login}
                         </li>
                         <li className="liTableHeader2">
-                            <a className="link" href={repos.repositorie_url}>
+                            <a className="link" href={props.repositorie_url}>
                                 {linkName}
                             </a>
                         </li>
@@ -35,10 +29,10 @@ export const RepoRows = (props) => {
                             2
                         </li>
                         <li className="liTableHeader2">
-                            {repos.creation_date}
+                            {props.creation_date}
                         </li>
                         <li className="liTableHeader2">
-                            {repos.update_date}
+                            {props.update_date}
                         </li>
                     </ul>
                 </li>
@@ -48,20 +42,20 @@ export const RepoRows = (props) => {
                         <button className="activatorDetailButton" onClick={() => setShowDetails(!showDetails)}></button>
                     </div>
                 </li>
-                {(showDetails && {repos}) &&
+                {showDetails && 
                 <li className="liTable2Detail">
                     <ul className="ulTableHeader2Detail">
                         <li className="liTableHeader2Detail">
-                            {repos.surname}
+                            {props.surname}
                         </li>
                         <li className="liTableHeader2Detail">
-                            {repos.name}
+                            {props.name}
                         </li>
                         <li className="liTableHeader2Detail">
-                            {repos.login}
+                            {props.login}
                         </li>
                         <li className="liTableHeader2Detail">
-                            <a className="linkDetail" href={repos.repositorie_url}>
+                            <a className="linkDetail" href={props.repositorie_url}>
                                 {linkName}
                             </a>
                         </li>
@@ -69,25 +63,15 @@ export const RepoRows = (props) => {
                             2
                         </li>
                         <li className="liTableHeader2Detail">
-                            {repos.creation_date}
+                            {props.creation_date}
                         </li>
                         <li className="liTableHeader2Detail">
-                            {repos.update_date}
+                            {props.update_date}
                         </li>
                     </ul>
                 </li>
                 }
             </div>
-            
-
-            );
-        }
-    );
-
-    return(
-        <div>
-            {repoList}
-        </div>
-        
+    
     );
 }

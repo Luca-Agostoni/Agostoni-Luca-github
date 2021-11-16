@@ -13,7 +13,7 @@ const merge = () => {
 
             gitData.filter(data => data.url === repo).forEach(filtered =>{ 
                 const result = {
-                                    id: user.id,
+                                    id: filtered.id,
                                     surname: user.surname,
                                     name: user.name,
                                     login: user.login,
