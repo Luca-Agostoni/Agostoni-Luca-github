@@ -7,13 +7,27 @@ export const TableUsers = (props) => {
             <ul className="ulTable">
                 <li className="liTable1">
                     <ul className="ulTableHeader1">
-                        <li className="liTableHeader1">Cognome</li>
-                        <li className="liTableHeader1">Nome</li>
-                        <li className="liTableHeader1">Utente github</li>
-                        <li className="liTableHeader1">Nome repo</li>
-                        <li className="liTableHeader1">Totale commit</li>
-                        <li className="liTableHeader1">Data creazione</li>
-                        <li className="liTableHeader1final">Ultimo aggiornamento</li>
+                        <li className="liTableHeader1">
+                            <p>Cognome</p>
+                        </li>
+                        <li className="liTableHeader1">
+                            <p>Nome</p>
+                        </li>
+                        <li className="liTableHeader1">
+                            <p>Utente github</p>
+                        </li>
+                        <li className="liTableHeader1">
+                            <p>Nome repo</p>
+                        </li>
+                        <li className="liTableHeader1">
+                            <p>Totale commit</p>
+                        </li>
+                        <li className="liTableHeader1">
+                            <p>Data creazione</p>
+                        </li>
+                        <li className="liTableHeader1final">
+                            <p>Ultimo aggiornamento</p>
+                        </li>
                     </ul>
                 </li>
                 {
@@ -23,10 +37,10 @@ export const TableUsers = (props) => {
                                 name={repos.name} 
                                 surname={repos.surname} 
                                 login={repos.login} 
-                                repositorie_name={repos.repositorie_name} 
-                                repositorie_url={repos.repositorie_url}
-                                creation_date={repos.creation_date}
-                                update_date={repos.update_date}
+                                repoName={repos.repoName} 
+                                link={repos.link}
+                                creationDate={repos.creationDate}
+                                lastUpdate={repos.lastUpdate}
                             />
                         )
                     )

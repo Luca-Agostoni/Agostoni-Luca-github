@@ -1,44 +1,50 @@
 import { useState } from 'react/cjs/react.development';
+import { DateTime } from 'luxon';
 import './RepoRows.css';
 
 
 export const RepoRows = (props) => {
 
     const [showDetails, setShowDetails] = useState(false);
-    const linkName = props.repositorie_name;
+    const linkName = props.repoName;
+
+    function changeDate (date){
+        const result = DateTime.fromISO(date).setLocale('it').toFormat('dd LLL yyyy | HH:mm:ss');
+        return result;
+    }
 
     return(
             <div>
                 <li className="liTable2">
                     <ul className="ulTableHeader2">
                         <li className="liTableHeader2">
-                            {props.surname}
+                            <p>{props.surname}</p>
                         </li>
                         <li className="liTableHeader2">
-                            {props.name}
+                            <p>{props.name}</p>
                         </li>
                         <li className="liTableHeader2">
-                            {props.login}
+                            <p>{props.login}</p>
                         </li>
                         <li className="liTableHeader2">
-                            <a className="link" href={props.repositorie_url}>
-                                {linkName}
+                            <a className="link" href={props.link}>
+                                <p>{linkName}</p>
                             </a>
                         </li>
                         <li className="liTableHeader2">
-                            2
+                            <p>2</p>
                         </li>
                         <li className="liTableHeader2">
-                            {props.creation_date}
+                            <p>{changeDate(props.creationDate)}</p>
                         </li>
                         <li className="liTableHeader2">
-                            {props.update_date}
+                            <p>{changeDate(props.lastUpdate)}</p>
                         </li>
                     </ul>
                 </li>
                 <li className="liTable2check">
                     <div className="detailButtonSlot">
-                        details
+                        dettagli
                         <button className="activatorDetailButton" onClick={() => setShowDetails(!showDetails)}></button>
                     </div>
                 </li>
@@ -46,27 +52,27 @@ export const RepoRows = (props) => {
                 <li className="liTable2Detail">
                     <ul className="ulTableHeader2Detail">
                         <li className="liTableHeader2Detail">
-                            {props.surname}
+                            <p>{props.surname}</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            {props.name}
+                            <p>{props.name}</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            {props.login}
+                            <p>{props.login}</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            <a className="linkDetail" href={props.repositorie_url}>
-                                {linkName}
+                            <a className="linkDetail" href={props.link}>
+                                <p>{linkName}</p>
                             </a>
                         </li>
                         <li className="liTableHeader2Detail">
-                            2
+                            <p>2</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            {props.creation_date}
+                            <p>{changeDate(props.creationDate)}</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            {props.update_date}
+                            <p>{changeDate(props.lastUpdate)}</p>
                         </li>
                     </ul>
                 </li>
