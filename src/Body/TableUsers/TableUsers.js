@@ -41,6 +41,7 @@ export const TableUsers = (props) => {
                                 link={repos.link}
                                 creationDate={repos.creationDate}
                                 lastUpdate={repos.lastUpdate}
+                                key={repos.link}
                             />
                         )
                     )

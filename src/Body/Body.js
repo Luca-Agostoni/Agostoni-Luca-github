@@ -32,7 +32,7 @@ export const Body = () => {
                     <div className="divUpdateButton">
                         <button className="updateButton" onClick={() => handleLoadClick()}>
                             <b>Aggiorna</b>
-                            <i class="fa fa-repeat"></i>
+                            <i className="fa fa-repeat"></i>
                         </button>
                     </div>
                     <TableUsers dataRepositorie={repos}/>
