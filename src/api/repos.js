@@ -3,7 +3,7 @@ import axios from "axios";
 export const listRepos = async () => {
     try {
         const response = await axios.get(
-            'https://github-function-app.azurewebsites.net/api/HttpStudentsRepos'
+            'https://github-funtion-ttf.azurewebsites.net/api/httpstudentsrepos'
         );
         return response.data && response.data.results ? response.data.results : undefined;
     } catch (error) {
