@@ -29,7 +29,12 @@ export const Body = () => {
             (
                 <div className="formBody">
                     <Top totRepos={repos.length}/>
-                    <button onClick={() => handleLoadClick()}>Aggiorna repos</button>
+                    <div className="divUpdateButton">
+                        <button className="updateButton" onClick={() => handleLoadClick()}>
+                            <b>Aggiorna</b>
+                            <i class="fa fa-repeat"></i>
+                        </button>
+                    </div>
                     <TableUsers dataRepositorie={repos}/>
                 </div>
             )

@@ -79,11 +79,17 @@ p{
     margin: 0;
     margin-left: 10%;
     margin-bottom: 3px;
+    font-size: 10px;
+    color: rgb(134, 163, 248);
     border: 1px solid white;
     border-radius: 3px;
+    padding-left: 3.5px;
+    padding-top: 0;
+    padding-bottom: 5px;
 }
 .activatorDetailButton:active{
     background-color: royalblue;
+    color: royalblue;
 }
 .activatorDetailButton:disabled{
     width: 0px;

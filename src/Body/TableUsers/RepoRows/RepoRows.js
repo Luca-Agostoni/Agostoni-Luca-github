@@ -45,7 +45,9 @@ export const RepoRows = (props) => {
                 <li className="liTable2check">
                     <div className="detailButtonSlot">
                         dettagli
-                        <button className="activatorDetailButton" onClick={() => setShowDetails(!showDetails)}></button>
+                        <button className="activatorDetailButton" onClick={() => setShowDetails(!showDetails)} >
+                            x
+                        </button>
                     </div>
                 </li>
                 {showDetails && 

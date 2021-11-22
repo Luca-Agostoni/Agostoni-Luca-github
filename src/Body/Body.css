@@ -4,3 +4,26 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.divUpdateButton{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: right;
+    border-radius: 0 5px 0 0;
+    border-right: rgb(134, 163, 248) solid 1px;
+}
+.updateButton{
+    height: 30px;
+    width: 14.8%;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    background-color: rgb(134, 163, 248);
+    border: rgb(134, 163, 248) solid 1px;
+}
+.updateButton:active{
+    background-color: royalblue;
+    border-color: royalblue;
+}
+.fa-repeat{
+    padding-left: 5%;
+}
