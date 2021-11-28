@@ -18,27 +18,27 @@ export const RepoRows = (props) => {
                 <li className="liTable2">
                     <ul className="ulTableHeader2">
                         <li className="liTableHeader2">
-                            <p>{props.surname}</p>
+                            <p className="liTableHeader2Txt">{props.surname}</p>
                         </li>
                         <li className="liTableHeader2">
-                            <p>{props.name}</p>
+                            <p className="liTableHeader2Txt">{props.name}</p>
                         </li>
                         <li className="liTableHeader2">
-                            <p>{props.login}</p>
+                            <p className="liTableHeader2Txt">{props.login}</p>
                         </li>
                         <li className="liTableHeader2">
                             <a className="link" href={props.link}>
-                                <p>{linkName}</p>
+                                <p className="liTableHeader2Txt">{linkName}</p>
                             </a>
                         </li>
                         <li className="liTableHeader2">
-                            <p>2</p>
+                            <p className="liTableHeader2Txt">2</p>
                         </li>
                         <li className="liTableHeader2">
-                            <p>{changeDate(props.creationDate)}</p>
+                            <p className="liTableHeader2Txt">{changeDate(props.creationDate)}</p>
                         </li>
                         <li className="liTableHeader2">
-                            <p>{changeDate(props.lastUpdate)}</p>
+                            <p className="liTableHeader2Txt">{changeDate(props.lastUpdate)}</p>
                         </li>
                     </ul>
                 </li>
@@ -54,27 +54,27 @@ export const RepoRows = (props) => {
                 <li className="liTable2Detail">
                     <ul className="ulTableHeader2Detail">
                         <li className="liTableHeader2Detail">
-                            <p>{props.surname}</p>
+                            <p className="liTableHeader2Txt">{props.surname}</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            <p>{props.name}</p>
+                            <p className="liTableHeader2Txt">{props.name}</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            <p>{props.login}</p>
+                            <p className="liTableHeader2Txt">{props.login}</p>
                         </li>
                         <li className="liTableHeader2Detail">
                             <a className="linkDetail" href={props.link}>
-                                <p>{linkName}</p>
+                                <p className="liTableHeader2Txt">{linkName}</p>
                             </a>
                         </li>
                         <li className="liTableHeader2Detail">
-                            <p>2</p>
+                            <p className="liTableHeader2Txt">2</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            <p>{changeDate(props.creationDate)}</p>
+                            <p className="liTableHeader2Txt">{changeDate(props.creationDate)}</p>
                         </li>
                         <li className="liTableHeader2Detail">
-                            <p>{changeDate(props.lastUpdate)}</p>
+                            <p className="liTableHeader2Txt">{changeDate(props.lastUpdate)}</p>
                         </li>
                     </ul>
                 </li>

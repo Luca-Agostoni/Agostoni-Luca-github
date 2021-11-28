@@ -1,6 +1,5 @@
 .formLinks{
     width: 65%;
-    border: green solid 1px;
     padding: 4px;
     margin-bottom: 10px;
     text-align: center;
@@ -8,8 +7,15 @@
 }
 .link{
     font-size: 17px;
-    color: black;
+    color: rgb(84, 119, 221) !important;
+    background-color: rgb(168, 190, 255) !important;
+    text-transform: none !important;
+    border-color: rgb(134, 163, 248) !important;
 }
-.link:visisted{
-    color: black;
+.link:hover{
+    color: white !important;
+    background-color: royalblue !important;
+}
+.linkTxt{
+    margin: 0 !important;
 }

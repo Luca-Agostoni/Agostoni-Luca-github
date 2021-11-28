@@ -1,6 +1,7 @@
 import {Header} from './Header/Header';
 import {Body} from './Body/Body';
 import './App.css';
+import * as React from 'react';
 
 
 function App() {
@@ -11,5 +12,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

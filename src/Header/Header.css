@@ -1,7 +1,6 @@
 .formHeader{
     width: 100%;
-    border: green solid 1px;
-    margin-top: 10px;
+    background-color: rgb(134, 163, 248);
     margin-bottom: 10px;
     text-align: left;
 }
