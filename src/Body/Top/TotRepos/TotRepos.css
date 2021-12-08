@@ -1,10 +1,37 @@
 .TotRepos{
-    width: 70%;
-    height: 20px;
-    margin-top: 10px;
-    padding-top: 2px;
-    margin-left: 6%;
-    padding-bottom: 2px;
-    margin-bottom: 10px;
-    border: green solid 1px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    margin: 8px;
+    min-width: 80%;
+}
+.TotReposCell{
+    padding: 7px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    vertical-align: middle !important;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    color: white !important;
+    background-color: rgb(95, 129, 230)  !important;
+    height: 40px;
+    min-height: 40px !important;
+    color: white !important;
+    width: 100% !important;
+    border: solid 0.1rem !important;
+    border-color: rgb(120, 149, 236) !important;
 }

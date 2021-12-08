@@ -1,12 +1,40 @@
-.divSelection{
-    width: 80%;
-    border:sandybrown solid 1px;
-    margin-top: 10px;
+
+.inputLabel{
+    border-radius: 4px;
+    color: white !important;
+    background-color: rgb(95, 129, 230)  !important;
 }
-.selectionClass{
-    width: 72%;
-    border:gray solid 1px;
-    margin-left: 10px;
-    margin: 6px;
-    height: 20px;   
+.css-6hp17o-MuiList-root-MuiMenu-list {
+    background-color: rgb(95, 129, 230)  !important;
+}
+.inputLabelClass{
+    color: white !important;
+    font-size: bold !important;
+    background-color: rgb(55, 95, 214) !important;
+}
+.inputLabelOption{
+    color: white !important;
+    border-top: solid 3px rgb(95, 129, 230)  !important;
+    border-bottom: solid 3px rgb(95, 129, 230)  !important;
+    background-color: rgb(95, 129, 230)  !important;
+}
+.inputLabelOption:hover{
+    color: white !important;
+    background-color: rgb(134, 163, 248) !important;
+}
+.inputLabel:hover{
+    color: white !important;
+    background-color: rgb(120, 149, 236)  !important;
+}
+.selectionSelect{
+    height: 40px;
+    min-height: 40px !important;
+    color: white !important;
+}
+svg{
+    color: white !important;
+}
+fieldset{
+    border: solid 0.1rem !important;
+    border-color: rgb(120, 149, 236) !important;
 }

@@ -1,8 +1,9 @@
 .formHeader{
     width: 100%;
     background-color: rgb(134, 163, 248);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: left;
+    border-bottom: solid 0.1rem royalblue;
 }
 .Logo{
     margin-left: 5%;
@@ -21,6 +22,8 @@
     padding: 0;
     list-style: none;
     display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .liHeader1{
     width: 60%;
@@ -30,5 +33,4 @@
     width: 40%;
     height: 100%;
     text-align: center;
-    padding-top: 15px;
 }

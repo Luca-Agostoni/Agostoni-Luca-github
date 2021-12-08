@@ -1,20 +1,19 @@
 .formLinks{
     width: 65%;
     padding: 4px;
-    margin-bottom: 10px;
     text-align: center;
     margin-left: 26%;
 }
-.link{
+.linkSection{
     font-size: 17px;
-    color: rgb(84, 119, 221) !important;
-    background-color: rgb(168, 190, 255) !important;
+    color: white !important;
+    background-color: royalblue !important;
     text-transform: none !important;
     border-color: rgb(134, 163, 248) !important;
 }
-.link:hover{
+.linkSection:hover{
     color: white !important;
-    background-color: royalblue !important;
+    background-color: rgb(95, 129, 230) !important;
 }
 .linkTxt{
     margin: 0 !important;
