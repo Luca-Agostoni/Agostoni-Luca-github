@@ -1,10 +1,13 @@
 import './TableUsers.css';
 import { RepoRows } from './RepoRows/RepoRows';
+import { Table } from '@mui/material';
+import { TableCell } from '@mui/material';
+import { TableRow } from '@mui/material';
 
 export const TableUsers = (props) => {
     return(
         <div className="formTable">
-            <ul className="ulTable">
+            {/* <ul className="ulTable">
                 <li className="liTable1">
                     <ul className="ulTableHeader1">
                         <li className="liTableHeader1">
@@ -29,7 +32,19 @@ export const TableUsers = (props) => {
                             <p>Ultimo aggiornamento</p>
                         </li>
                     </ul>
-                </li>
+                </li> */}
+                <Table>
+                    <TableRow className='headTable'>
+                        <TableCell>Surname</TableCell>
+                        <TableCell>Name</TableCell>
+                        <TableCell>Login</TableCell>
+                        <TableCell>Link</TableCell>
+                        <TableCell>Commits</TableCell>
+                        <TableCell>Creation Date</TableCell>
+                        <TableCell>Last Update</TableCell>
+                        <TableCell>Details</TableCell>
+                    </TableRow>
+                </Table>
                 {
                     props.dataRepositorie.map(
                         repos => (
@@ -46,7 +61,7 @@ export const TableUsers = (props) => {
                         )
                     )
                 }
-            </ul>
+            {/* </ul> */}
         </div>
     );
 }

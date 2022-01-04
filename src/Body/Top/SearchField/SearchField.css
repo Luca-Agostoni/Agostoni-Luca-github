@@ -1,4 +1,4 @@
-.TotRepos{
+.divSearch{
     display: inline-flex;
     flex-direction: column;
     position: relative;
@@ -7,11 +7,37 @@
     vertical-align: top;
     margin: 8px;
     min-width: 80%;
-    border-left: 0 !important;
 }
-.TotReposCell{
-    text-align: center;
-    padding: 7px;
+label+.css-1480iag-MuiInputBase-root-MuiInput-root {
+    margin-top: 17px !important;
+    margin-bottom: 4px !important;
+    width: 100% !important;
+}
+.css-zhv7dg-MuiSvgIcon-root {
+    margin-top: 10px !important;
+    font-size: 1.8rem !important;
+    width: 1em;
+    height: 1em;
+}
+.css-1480iag-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 1px solid rgb(206, 206, 206) !important;
+}
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    width: 80% !important;
+}
+#input-with-sx{
+    margin-bottom: -3px;
+    color: white !important;
+    width: 100% !important;
+}
+label{
+    padding-top: 4px !important;
+    color: white !important;
+    border-color: white !important;
+}
+.searchField{
+    padding-left: 5px;
+    padding-bottom: 2px;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -36,4 +62,7 @@
     width: 100% !important;
     border: solid 0.1rem !important;
     border-color: rgb(120, 149, 236) !important;
+}
+.css-1480iag-MuiInputBase-root-MuiInput-root {
+    color: white !important;
 }

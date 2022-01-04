@@ -1,5 +1,8 @@
 .formTop{
     padding-bottom: 30px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .ulTop{
     width: 100%;
@@ -10,9 +13,14 @@
     display: flex;
 }
 .liTop1{
-    width: 35%;
+    width: 30%;
+    text-align: left;
 }
 .liTop2{
+    width: 40%;
+}
+.liTop3{
     width: 30%;
+    text-align: right;
 }
 
