@@ -1,5 +1,6 @@
 
 .inputLabel{
+    margin: 0 !important;
     border-radius: 4px;
     color: white !important;
     background-color: royalblue  !important;
@@ -27,6 +28,7 @@
     background-color: rgb(120, 149, 236)  !important;
 }
 .selectionSelect{
+    margin: 0 !important;
     height: 40px;
     min-height: 40px !important;
     color: white !important;

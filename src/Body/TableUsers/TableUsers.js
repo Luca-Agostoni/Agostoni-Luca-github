@@ -3,37 +3,41 @@ import { RepoRows } from './RepoRows/RepoRows';
 import { Table } from '@mui/material';
 import { TableCell } from '@mui/material';
 import { TableRow } from '@mui/material';
+import { Grid } from '@mui/material';
+import { Toolbar } from '@mui/material';
 
 export const TableUsers = (props) => {
     return(
         <div className="formTable">
-            {/* <ul className="ulTable">
-                <li className="liTable1">
-                    <ul className="ulTableHeader1">
-                        <li className="liTableHeader1">
-                            <p>Cognome</p>
-                        </li>
-                        <li className="liTableHeader1">
-                            <p>Nome</p>
-                        </li>
-                        <li className="liTableHeader1">
-                            <p>Utente github</p>
-                        </li>
-                        <li className="liTableHeader1">
-                            <p>Nome repo</p>
-                        </li>
-                        <li className="liTableHeader1">
-                            <p>Totale commit</p>
-                        </li>
-                        <li className="liTableHeader1">
-                            <p>Data creazione</p>
-                        </li>
-                        <li className="liTableHeader1final">
-                            <p>Ultimo aggiornamento</p>
-                        </li>
-                    </ul>
-                </li> */}
-                <Table>
+                <Toolbar className='headTable'>
+                    <Grid container columns={16}>
+                        <Grid item xs={2} className='headTableGrid'>
+                            Surname 
+                        </Grid>
+                        <Grid item xs={2} className='headTableGrid'>
+                            Name 
+                        </Grid>
+                        <Grid item xs={2} className='headTableGrid'> 
+                            Login
+                        </Grid>
+                        <Grid item xs={2} className='headTableGrid'>
+                            Link 
+                        </Grid>
+                        <Grid item xs={1} className='headTableGrid'>
+                            Commits
+                        </Grid>
+                        <Grid item xs={3} className='headTableGrid'> 
+                            Creation Data
+                        </Grid>
+                        <Grid item xs={3} className='headTableGrid'> 
+                            Last Update
+                        </Grid>
+                        <Grid item xs={1} className='headTableGrid'> 
+                            Details
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                {/* <Table>
                     <TableRow className='headTable'>
                         <TableCell>Surname</TableCell>
                         <TableCell>Name</TableCell>
@@ -44,7 +48,7 @@ export const TableUsers = (props) => {
                         <TableCell>Last Update</TableCell>
                         <TableCell>Details</TableCell>
                     </TableRow>
-                </Table>
+                </Table> */}
                 {
                     props.dataRepositorie.map(
                         repos => (
@@ -61,7 +65,6 @@ export const TableUsers = (props) => {
                         )
                     )
                 }
-            {/* </ul> */}
         </div>
     );
 }

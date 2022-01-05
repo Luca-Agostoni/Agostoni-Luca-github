@@ -1,18 +1,25 @@
 .formTable{
-    width: 96%;
+    width: 100%;
     margin-bottom: 30px;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-radius: 5px !important;
+}
+.css-a5rdam-MuiGrid-root>.MuiGrid-item{
+    padding-left: 0 !important;
 }
 .css-bsph2u-MuiTableCell-root {
     text-align: center !important;
 }
-
+.headTableGrid{
+    text-align: center !important;
+}
 .headTable{
     background-color: royalblue !important;
     color: white !important;
-    border-radius: 5px !important;
+    border-radius: 5px 5px 0 0 !important;
+    border: solid 0.1rem!important;
+    border-bottom: 0 !important;
+    border-color: rgb(120, 149, 236) !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 .css-rqglhn-MuiTable-root{
     border-radius: 5px !important;

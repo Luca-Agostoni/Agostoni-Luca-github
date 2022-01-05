@@ -11,7 +11,8 @@ import React from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './RepoRows.css';
-
+import { Grid } from '@mui/material';
+import { Toolbar } from '@mui/material';
 
 export const RepoRows = (props) => {
 
@@ -25,14 +26,93 @@ export const RepoRows = (props) => {
     }
 
     return(
-        <aa>
-        <TableRow className='tableRow' sx={{ '& > *': { borderBottom: 'unset' } }}>
+        <>
+            <Toolbar className='repoTable'>
+                    <Grid container columns={16}>
+                        <Grid item xs={2} className='repoTableGrid'>
+                            <p>{props.surname}</p> 
+                        </Grid>
+                        <Grid item xs={2} className='repoTableGrid'>
+                            <p>{props.name}</p> 
+                        </Grid>
+                        <Grid item xs={2} className='repoTableGrid'> 
+                            <p>{props.login}</p>
+                        </Grid>
+                        <Grid item xs={2} className='repoTableGrid'>
+                            <p>
+                                <a href={props.link}>
+                                    <button className='buttonLinkRepo'>
+                                        <i className="fa-repeat"></i>
+                                    </button>
+                                </a>
+                            </p>
+                        </Grid>
+                        <Grid item xs={1} className='repoTableGrid'>
+                            <p>4</p>
+                        </Grid>
+                        <Grid item xs={3} className='repoTableGrid'> 
+                            <p>{changeDate(props.creationDate)}</p>
+                        </Grid>
+                        <Grid item xs={3} className='repoTableGrid'> 
+                            <p>{changeDate(props.lastUpdate)}</p>
+                        </Grid>
+                        <Grid item xs={1} className='repoTableGrid'> 
+                            <p>
+                            <IconButton className='buttonRow' aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
+                                {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                            </IconButton>
+                            </p>
+                        </Grid>
+                    </Grid>
+            </Toolbar>
+            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item xs={2} className='repoTableGrid'>
+                            <p><b>{props.surname}</b></p> 
+                        </Grid>
+                        <Grid item xs={2} className='repoTableGrid'>
+                            <p><b>{props.name}</b></p> 
+                        </Grid>
+                        <Grid item xs={2} className='repoTableGrid'> 
+                            <p><b>{props.login}</b></p>
+                        </Grid>
+                        <Grid item xs={2} className='repoTableGrid'>
+                            <p>
+                                <a href={props.link}>
+                                    <button className='buttonLinkRepo'>
+                                        <i className="fa-repeat"></i>
+                                    </button>
+                                </a>
+                            </p>
+                        </Grid>
+                        <Grid item xs={1} className='repoTableGrid'>
+                            <p><b>4</b></p>
+                        </Grid>
+                        <Grid item xs={3} className='repoTableGrid'> 
+                            <p><b>{changeDate(props.creationDate)}</b></p>
+                        </Grid>
+                        <Grid item xs={3} className='repoTableGrid'> 
+                            <p><b>{changeDate(props.lastUpdate)}</b></p>
+                        </Grid>
+                        <Grid item xs={1} className='repoTableGrid'> 
+                            <p>
+                            <IconButton className='buttonPoint' aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
+                            </IconButton>
+                            </p>
+                        </Grid>
+                    </Grid>
+            </Toolbar>
+            </Collapse>
+        {/* <TableRow className='tableRow'>
             <TableCell component="th" scope="row">{props.surname}</TableCell>
             <TableCell>{props.name}</TableCell>
             <TableCell>{props.login}</TableCell>
             <TableCell>
-                <a className="link" href={props.link}> 
-                    <p className="liTableHeader2Txt">{linkName}</p>
+                <a  href={props.link}>
+                    <button className='buttonLinkRepo'>
+                        <i className="fa-repeat"></i>
+                    </button>
                 </a>
             </TableCell>
             <TableCell>4</TableCell>
@@ -48,31 +128,37 @@ export const RepoRows = (props) => {
                 </IconButton>
             </TableCell>
         </TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
-          <Collapse in={open} timeout="auto" unmountOnExit>
-                <Box sx={{ margin: 1 }}>
-                    <Table size="small" aria-label="purchases">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell align="right">{props.surname}</TableCell>
-                                <TableCell align="right">{props.name}</TableCell>
-                                <TableCell align="right">{props.login}</TableCell>
-                                <TableCell align="right">
-                                    <a className="link" href={props.link}> 
-                                        <p className="liTableHeader2Txt">{linkName}</p>
-                                    </a>
-                                </TableCell>
-                                <TableCell align="right">5</TableCell>
-                                <TableCell align="right">{changeDate(props.creationDate)}</TableCell>
-                                <TableCell align="right">{changeDate(props.lastUpdate)}</TableCell>
-                            </TableRow>
-                        </TableHead>
-                    </Table>
-                </Box>
-            </Collapse>   
-        </TableCell>
-        </aa>
+            <Collapse in={open} timeout="auto" unmountOnExit className='tableRow'>
+                <TableRow >
+                    <TableCell component="th" scope="row">{props.surname}</TableCell>
+                    <TableCell>{props.name}</TableCell>
+                    <TableCell>{props.login}</TableCell>
+                    <TableCell>
+                        <a className="link" href={props.link}> 
+                            <p className="liTableHeader2Txt">{linkName}</p>
+                        </a>
+                    </TableCell>
+                    <TableCell>4</TableCell>
+                    <TableCell>{changeDate(props.creationDate)}</TableCell>
+                    <TableCell>{changeDate(props.lastUpdate)}</TableCell>
+                    <TableCell>
+                        <IconButton
+                            aria-label="expand row"
+                            size="small"
+                        >
+                        </IconButton>
+                    </TableCell>
+                </TableRow>
+            </Collapse>    */}
+        </>
         
+
+
+
+
+
+
+
 
 
             // <div>

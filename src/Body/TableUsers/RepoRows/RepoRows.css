@@ -1,19 +1,48 @@
 .tableRow{
     width: 100% !important;
 }
-.css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root:hover {
+.buttonRow:hover {
     background-color: rgb(120, 149, 236)  !important;
 }
-.css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+.buttonRow {
     background-color: royalblue !important;
+}
+.buttonPoint{
+    background-color: royalblue !important;
+    cursor:default !important;
 }
 .css-r7oxtk-MuiTableCell-root{
     text-align: center !important;
     width: 14% !important;
 }
-.css-2blr9s-MuiTableRow-root{
-    min-width: 100px !important;
-    min-width: 100px !important;
+.repoTable{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border: solid 0.1rem rgb(120, 149, 236)!important;
+    border-top: 0 !important;
+    border-bottom: rgb(235, 235, 235) solid 0.5px!important;
+}
+.repoTableUnder{
+    color: rgb(88, 127, 247) !important;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(243, 243, 243);
+    border: solid 0.1rem rgb(120, 149, 236)!important;
+    border-top: 0 !important;
+}
+.buttonLinkRepo:hover{
+    background-color: rgb(120, 149, 236)  !important;
+}
+.buttonLinkRepo{
+    background-color: royalblue !important;
+    border: 0;
+    border-radius: 100%;
+    width: 35px !important;
+    height: 35px !important;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    color: white;
 }
 thead {
     width: 100% !important;

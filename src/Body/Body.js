@@ -3,6 +3,7 @@ import {Top} from './Top/Top';
 import {TableUsers} from './TableUsers/TableUsers';
 import { listRepos } from '../api/repos';
 import { useEffect, useState } from 'react';
+import { CircularProgress } from '@mui/material';
 
 
 export const Body = () => {
@@ -24,14 +25,13 @@ export const Body = () => {
     }
 
     return(
-        <div>
+        <div className='formBodyFirst'>
         {repos &&
             (
-                <div className="formBody">
+                <div className="formBodySecond">
                     <Top totRepos={repos.length}/>
                     <div className="divUpdateButton">
                         <button className="updateButton" onClick={() => handleLoadClick()}>
-                            <b>Aggiorna</b>
                             <i className="fa fa-repeat"></i>
                         </button>
                     </div>
@@ -41,9 +41,12 @@ export const Body = () => {
         }
         {!repos &&
             (
-                <p>
-                    caricamento...
-                </p>
+                <div>
+                    <CircularProgress />
+                    <br></br>
+                    <p className='textWait'><b>Attenda qualche istante...</b></p>
+                </div>
+                
             )
         }
         </div>

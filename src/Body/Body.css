@@ -1,28 +1,48 @@
-.formBody{
+.formBodyFirst{
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 4%;
+}
+.formBodySecond{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.css-1idz92c-MuiCircularProgress-svg{
+    color: royalblue !important;
+}
+.css-18lrjg1-MuiCircularProgress-root{
+    width: 150px !important;
+    height: 150px !important;
+    top: 50% !important;
 }
 .divUpdateButton{
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: right;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
     border-radius: 0 5px 0 0;
-    border-right: rgb(134, 163, 248) solid 1px;
 }
 .updateButton{
-    height: 30px;
-    width: 14.8%;
+    width: 15%;
     color: white;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
+    font-size: 20px;
     background-color: rgb(134, 163, 248);
     border: rgb(134, 163, 248) solid 1px;
+}
+.updateButton:hover{
+    background-color: royalblue;
+    border-color: royalblue;
 }
 .updateButton:active{
     background-color: royalblue;
     border-color: royalblue;
 }
-.fa-repeat{
-    padding-left: 5%;
+.textWait{
+    color: royalblue;
+    font-size: 20px;
+    font: bolder;
 }
