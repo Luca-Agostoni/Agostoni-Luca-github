@@ -11,6 +11,9 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+.fa-repeat{
+    padding: 5%;
+}
 .css-1idz92c-MuiCircularProgress-svg{
     color: royalblue !important;
 }
@@ -22,6 +25,8 @@
 .divUpdateButton{
     width: 100%;
     padding: 2%;
+    padding-right: 0;
+    padding-left: 0;
     text-align: center;
     border-radius: 0 5px 0 0;
 }
@@ -45,4 +50,13 @@
     color: royalblue;
     font-size: 20px;
     font: bolder;
+}
+@media only screen and (max-width: 600px) {
+    .divUpdateButton{
+        padding-top: 10%;
+    }
+    .formBodySecond {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

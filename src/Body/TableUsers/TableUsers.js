@@ -8,6 +8,39 @@ import { Toolbar } from '@mui/material';
 
 export const TableUsers = (props) => {
     return(
+        <>
+        <div className="formTablePhone">
+                <Toolbar className='headTable'>
+                    <Grid container columns={16}>
+                        <Grid item xs={10} className='headTableGrid'>
+                            Repositorie 
+                        </Grid>
+                        <Grid item xs={6} className='headTableGrid'>
+                            Details 
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                {
+                    props.dataRepositorie.map(
+                        repos => (
+                            <RepoRows 
+                                name={repos.name} 
+                                surname={repos.surname} 
+                                login={repos.login} 
+                                repoName={repos.repoName} 
+                                link={repos.link}
+                                creationDate={repos.creationDate}
+                                lastUpdate={repos.lastUpdate}
+                                key={repos.link}
+                            />
+                        )
+                    )
+                }
+                <Toolbar className='tailTable'>
+                    <Grid container columns={16}>
+                    </Grid>
+                </Toolbar>
+        </div>
         <div className="formTable">
                 <Toolbar className='headTable'>
                     <Grid container columns={16}>
@@ -37,18 +70,6 @@ export const TableUsers = (props) => {
                         </Grid>
                     </Grid>
                 </Toolbar>
-                {/* <Table>
-                    <TableRow className='headTable'>
-                        <TableCell>Surname</TableCell>
-                        <TableCell>Name</TableCell>
-                        <TableCell>Login</TableCell>
-                        <TableCell>Link</TableCell>
-                        <TableCell>Commits</TableCell>
-                        <TableCell>Creation Date</TableCell>
-                        <TableCell>Last Update</TableCell>
-                        <TableCell>Details</TableCell>
-                    </TableRow>
-                </Table> */}
                 {
                     props.dataRepositorie.map(
                         repos => (
@@ -65,6 +86,11 @@ export const TableUsers = (props) => {
                         )
                     )
                 }
+                <Toolbar className='tailTable'>
+                    <Grid container columns={16}>
+                    </Grid>
+                </Toolbar>
         </div>
+        </>
     );
 }

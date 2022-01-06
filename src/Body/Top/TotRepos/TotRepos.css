@@ -36,3 +36,8 @@
     border: solid 0.1rem !important;
     border-color: rgb(120, 149, 236) !important;
 }
+@media only screen and (max-width: 600px) {
+    .TotRepos{
+        min-width: 100% !important;   
+    }
+}

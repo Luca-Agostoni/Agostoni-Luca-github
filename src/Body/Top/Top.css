@@ -28,4 +28,23 @@
     text-align: right;
     padding: 0 !important;
 }
+.topPhone{
+    display: none !important;
+    padding: 0 !important;
+}
+.topPhoneLevel{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .formTop{
+        padding-top: 15% !important;
+        padding-bottom: 0 !important;
+    }
+    .Top{
+        display: none !important;
+    }
+    .topPhone{
+        display: block !important;
+    }
+}
 

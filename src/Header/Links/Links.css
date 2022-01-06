@@ -19,3 +19,21 @@
 .css-1or64il-MuiButtonGroup-root{
     border: 0.5px solid rgba(255, 255, 255, 0.575) !important;
 }
+@media only screen and (max-width: 780px) {
+    .linkTxt{
+        margin: 0 !important;
+        font-size: 10px !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .linkTxt{
+        font-size: 15px !important;
+    }
+    .linkSectionGroup{
+        width: 100% !important;
+    }
+    .linkSection{
+        width: 50% !important;
+    }
+}
+

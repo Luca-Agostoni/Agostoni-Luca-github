@@ -27,6 +27,80 @@ export const RepoRows = (props) => {
 
     return(
         <>
+            <Toolbar className='repoTablePhone'>
+                    <Grid container columns={16}>
+                        <Grid item xs={10} className='repoTableGrid'>
+                            <p>{linkName}</p> 
+                        </Grid>
+                        <Grid item xs={6} className='repoTableGrid'> 
+                            <p>
+                            <IconButton className='buttonRow' aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
+                                {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                            </IconButton>
+                            </p>
+                        </Grid>
+                    </Grid>
+            </Toolbar>
+            <Collapse in={open} timeout="auto" unmountOnExit>
+                <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item className='repoTableGrid'>
+                            <p><b>{props.surname}</b></p> 
+                        </Grid>
+                    </Grid>
+                </Toolbar>    
+                <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item className='repoTableGrid'>
+                            <p><b>{props.name}</b></p> 
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item className='repoTableGrid'> 
+                            <p><b>{props.login}</b></p>
+                        </Grid>
+                    </Grid>
+                </Toolbar>    
+                <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item className='repoTableGrid'>
+                            <p>
+                                <a href={props.link}>
+                                    <button className='buttonLinkRepo'>
+                                        <i className="fa fa-github"></i>
+                                    </button>
+                                </a>
+                            </p>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item className='repoTableGrid'>
+                            <p><b>4</b></p>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item className='repoTableGrid'> 
+                            <p><b>{changeDate(props.creationDate)}</b></p>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                <Toolbar className='repoTableUnder'>
+                    <Grid container columns={16}>
+                        <Grid item className='repoTableGrid'> 
+                            <p><b>{changeDate(props.lastUpdate)}</b></p>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+            </Collapse>
+
+
+
             <Toolbar className='repoTable'>
                     <Grid container columns={16}>
                         <Grid item xs={2} className='repoTableGrid'>
@@ -42,7 +116,7 @@ export const RepoRows = (props) => {
                             <p>
                                 <a href={props.link}>
                                     <button className='buttonLinkRepo'>
-                                        <i className="fa-repeat"></i>
+                                        <i className="fa fa-github"></i>
                                     </button>
                                 </a>
                             </p>
@@ -81,7 +155,7 @@ export const RepoRows = (props) => {
                             <p>
                                 <a href={props.link}>
                                     <button className='buttonLinkRepo'>
-                                        <i className="fa-repeat"></i>
+                                        <i className="fa fa-github"></i>
                                     </button>
                                 </a>
                             </p>

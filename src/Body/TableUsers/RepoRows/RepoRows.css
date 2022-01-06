@@ -22,12 +22,25 @@
     border-top: 0 !important;
     border-bottom: rgb(235, 235, 235) solid 0.5px!important;
 }
+.repoTablePhone{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border: solid 0.1rem rgb(120, 149, 236)!important;
+    border-top: 0 !important;
+    border-bottom: rgb(235, 235, 235) solid 0.5px!important;
+    display: none !important;
+}
 .repoTableUnder{
     color: rgb(88, 127, 247) !important;
     border-radius: 0 0 10px 10px;
     background-color: rgb(243, 243, 243);
     border: solid 0.1rem rgb(120, 149, 236)!important;
     border-top: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.fa-github{
+    font-size: 20px;
 }
 .buttonLinkRepo:hover{
     background-color: rgb(120, 149, 236)  !important;
@@ -147,4 +160,12 @@ thead {
     width: 0px;
     background-color: rgba(134, 134, 134, 0.603);
     border-color: rgba(134, 134, 134, 0.603);
+}
+@media only screen and (max-width: 600px) {
+    .repoTablePhone{
+        display: block !important;
+    }
+    .repoTable{
+        display: none !important;
+    }
 }

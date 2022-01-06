@@ -10,6 +10,12 @@
     border-bottom: solid 0.1rem !important;
     border-color: rgb(120, 149, 236) !important;
 }
+.headerPhone{
+    display: none !important;
+    background-color: royalblue !important;
+    padding: 0 !important;
+    min-height: 0px !important;
+}
 .fa-user{
     color: white;
     font-size: 45px;
@@ -19,4 +25,21 @@
 }
 .gridButton{
     display: flex;
+}
+@media only screen and (max-width: 780px) {
+    .fa-user{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .fa-user{
+        font-size: 50px;
+        margin: 1%;
+    }
+    .Header{
+        display: none !important;
+    }
+    .headerPhone{
+        display: block !important;
+    }
 }

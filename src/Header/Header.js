@@ -20,6 +20,20 @@ export const Header = () => {
                         </Grid>
                     </Grid>
                 </Toolbar>
+                <Toolbar className='headerPhone'>
+                    <Grid container spacing={1}>
+                        <Grid item className="gridLogo" xs={12}>
+                            <i className="fa fa-user"></i>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                <Toolbar className='headerPhone'>
+                    <Grid container spacing={1}>
+                        <Grid item className='gridButton' xs={12}>
+                            <Links/>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
         </div>
     );
 }

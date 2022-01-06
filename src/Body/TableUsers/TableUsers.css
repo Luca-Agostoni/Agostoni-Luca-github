@@ -2,6 +2,11 @@
     width: 100%;
     margin-bottom: 30px;
 }
+.formTablePhone{
+    width: 100%;
+    margin-bottom: 30px;
+    display: none !important;
+}
 .css-a5rdam-MuiGrid-root>.MuiGrid-item{
     padding-left: 0 !important;
 }
@@ -21,12 +26,28 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+.tailTable{
+    border-radius: 0 0 5px 5px !important;
+    border: solid 0.1rem!important;
+    border-top: 0 !important;
+    border-color: rgb(120, 149, 236) !important;
+    min-height: 15px !important;
+}
 .css-rqglhn-MuiTable-root{
     border-radius: 5px !important;
 }
 .css-1q1u3t4-MuiTableRow-root {
     border-radius: 5px !important;
 }
+@media only screen and (max-width: 600px) {
+    .formTable{
+        display: none !important;
+    }
+    .formTablePhone{
+        display: block !important;
+    }
+}
+
 /* .ulTable{
     width: 100%;
     height: 100%;

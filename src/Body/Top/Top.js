@@ -21,6 +21,27 @@ export const Top = (props) => {
                     </Grid>
                 </Grid>
             </Toolbar>
+            <Toolbar className='topPhone'>
+                <Grid container spacing={1}>
+                    <Grid item xs={12} className='topPhoneLevel'>
+                        <TotRepos totRepos={props.totRepos}/> 
+                    </Grid>
+                </Grid>
+            </Toolbar>
+            <Toolbar className='topPhone'>
+                <Grid container spacing={1}>
+                    <Grid item xs={12} className='topPhoneLevel'>
+                        <Selection/>
+                    </Grid>
+                </Grid>
+            </Toolbar>
+            <Toolbar className='topPhone'>
+                <Grid container spacing={1}>
+                    <Grid item xs={12} className='topPhoneLevel'>
+                        <SearchField/>
+                    </Grid>
+                </Grid>
+            </Toolbar>
         </div>
     );
 }
