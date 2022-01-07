@@ -14,9 +14,7 @@
 .fa-repeat{
     padding: 5%;
 }
-.css-1idz92c-MuiCircularProgress-svg{
-    color: royalblue !important;
-}
+
 .css-18lrjg1-MuiCircularProgress-root{
     width: 150px !important;
     height: 150px !important;
@@ -47,14 +45,23 @@
     border-color: royalblue;
 }
 .textWait{
-    color: royalblue;
+    color: white;
     font-size: 20px;
     font: bolder;
+    padding-top: 20px;
 }
 .divWait{
-    padding-top: 150px;
+    border: 0.5px solid rgb(120, 149, 236);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0 ;
+    margin-top: 150px;
+    background-color: rgb(65, 105, 225);
 }
-@media only screen and (max-width: 600px) {
+.iconWait{
+    font-size: 40px;
+}
+@media only screen and (max-width: 840px) {
     .divUpdateButton{
         padding-top: 10%;
     }

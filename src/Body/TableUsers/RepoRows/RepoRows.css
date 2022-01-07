@@ -59,8 +59,7 @@
     display: none !important;
 }
 .repoTableGridLinkPhone{
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 10px;
 }
 .repoTableGridPhone{
     height: 100% !important;

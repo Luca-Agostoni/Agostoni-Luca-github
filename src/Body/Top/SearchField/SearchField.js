@@ -1,15 +1,20 @@
 import { Search } from '@mui/icons-material';
-import { Box } from '@mui/system';
-import { TextField } from '@mui/material';
 import './SearchField.css';
+import Input from '@mui/material/Input';
+import FormControl from '@mui/material/FormControl';
+
 
 export const SearchField = () => {
+
     return(
         <div className="divSearch">
-            <Box className="searchField" sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                <Search sx={{ color: 'action.active', mr: 1, my: 0.1 }} />
-                <TextField id="input-with-sx" variant="standard" />
-            </Box>
+            <FormControl variant="standard" className="searchField">
+                <Input className="inputt" id="input-with-icon-adornment"
+                    startAdornment={
+                        <Search/>
+                    }
+                />
+            </FormControl>
         </div>
     );
 }

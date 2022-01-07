@@ -5,7 +5,6 @@ import { listRepos } from '../api/repos';
 import { useEffect, useState } from 'react';
 import { CircularProgress } from '@mui/material';
 
-
 export const Body = () => {
     const [repos, setRepos] = useState(undefined);
 
@@ -42,7 +41,7 @@ export const Body = () => {
         {!repos &&
             (
                 <div className='divWait'>
-                    <CircularProgress />
+                    <CircularProgress className="iconWait" />
                     <br></br>
                     <p className='textWait'><b>Attenda qualche istante...</b></p>
                 </div>

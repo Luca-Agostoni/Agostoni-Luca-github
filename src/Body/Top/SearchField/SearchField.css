@@ -24,14 +24,21 @@ label+.css-1480iag-MuiInputBase-root-MuiInput-root {
 .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
     width: 80% !important;
 }
-#input-with-sx{
+.inputt{
     color: white !important;
-    width: 100% !important;
+    width: 95% !important;
 }
 label{
     padding-top: 0 !important;
     color: white !important;
     border-color: white !important;
+}
+input{
+    color: white !important;
+    padding: 5px !important;
+    width: 100%;
+    border: 0 !important;
+    border-bottom: 0.5px solid white !important;
 }
 .searchField{
     padding-left: 5px;

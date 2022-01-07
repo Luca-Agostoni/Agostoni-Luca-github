@@ -6,9 +6,6 @@
     background-color: royalblue  !important;
     width: 80% !important;
 }
-.css-6hp17o-MuiList-root-MuiMenu-list {
-    background-color: rgb(95, 129, 230)  !important;
-}
 .inputLabelClass{
     color: white !important;
     font-size: bold !important;
@@ -33,6 +30,9 @@
     height: 40px;
     min-height: 40px !important;
     color: white !important;
+}
+ul{
+    background-color: rgb(95, 129, 230)  !important;
 }
 svg{
     color: white !important;
