@@ -1,8 +1,5 @@
 import './TableUsers.css';
 import { RepoRows } from './RepoRows/RepoRows';
-import { Table } from '@mui/material';
-import { TableCell } from '@mui/material';
-import { TableRow } from '@mui/material';
 import { Grid } from '@mui/material';
 import { Toolbar } from '@mui/material';
 
