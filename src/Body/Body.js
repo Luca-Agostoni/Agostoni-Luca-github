@@ -41,7 +41,7 @@ export const Body = () => {
         }
         {!repos &&
             (
-                <div>
+                <div className='divWait'>
                     <CircularProgress />
                     <br></br>
                     <p className='textWait'><b>Attenda qualche istante...</b></p>

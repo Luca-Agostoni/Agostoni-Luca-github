@@ -39,6 +39,34 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+.repoTableUnderPhone{
+    color: rgb(88, 127, 247) !important;
+    background-color: rgb(243, 243, 243);
+    border-bottom: 0 !important;
+    border-right: solid 2px !important;
+    border-top:  solid 0.5px rgb(149, 171, 238)!important;
+    padding: 0 !important;
+    display: none !important;
+    min-height: 0 !important;
+}
+.repoTableTailUnderPhone{
+    border-radius: 0 0 5px 5px !important;
+    border: solid 2px !important;
+    background-color: rgb(243, 243, 243);
+    border-color: rgb(120, 149, 236) !important;
+    border-top:  solid 0.5px rgb(149, 171, 238)!important;
+    min-height: 10px !important;
+    display: none !important;
+}
+.repoTableGridLinkPhone{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.repoTableGridPhone{
+    height: 100% !important;
+    color: white !important;
+    background-color: royalblue;
+}
 .fa-github{
     font-size: 20px;
 }
@@ -161,11 +189,20 @@ thead {
     background-color: rgba(134, 134, 134, 0.603);
     border-color: rgba(134, 134, 134, 0.603);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 840px) {
     .repoTablePhone{
         display: block !important;
     }
     .repoTable{
         display: none !important;
+    }
+    .repoTableUnder{
+        display: none !important;
+    }
+    .repoTableUnderPhone{
+        display: block !important;
+    }
+    .repoTableTailUnderPhone{
+        display: block !important;
     }
 }

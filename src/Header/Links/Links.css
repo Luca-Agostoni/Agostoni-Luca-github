@@ -1,4 +1,5 @@
 .formLinks{
+    padding-top: 2%;
     width: 100%;
     text-align: center;
 }
@@ -16,8 +17,11 @@
 .linkTxt{
     margin: 0 !important;
 }
-.css-1or64il-MuiButtonGroup-root{
+
+.linkSectionGroup{
     border: 0.5px solid rgba(255, 255, 255, 0.575) !important;
+    
+    border-radius: 5px 5px 5px 5px !important;
 }
 @media only screen and (max-width: 780px) {
     .linkTxt{
@@ -31,6 +35,9 @@
     }
     .linkSectionGroup{
         width: 100% !important;
+        border-right: 0 !important;
+        border-left: 0 !important;
+        border-radius: 0 !important;
     }
     .linkSection{
         width: 50% !important;

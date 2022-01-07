@@ -35,9 +35,10 @@
 .topPhoneLevel{
     text-align: center;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 840px) {
     .formTop{
-        padding-top: 15% !important;
+        padding-top: 2% !important;
         padding-bottom: 0 !important;
     }
     .Top{
@@ -45,6 +46,12 @@
     }
     .topPhone{
         display: block !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .formTop{
+        padding-top: 15% !important;
+        padding-bottom: 0 !important;
     }
 }
 

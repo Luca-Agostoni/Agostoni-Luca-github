@@ -25,12 +25,11 @@ label+.css-1480iag-MuiInputBase-root-MuiInput-root {
     width: 80% !important;
 }
 #input-with-sx{
-    margin-bottom: -3px;
     color: white !important;
     width: 100% !important;
 }
 label{
-    padding-top: 4px !important;
+    padding-top: 0 !important;
     color: white !important;
     border-color: white !important;
 }
@@ -64,9 +63,13 @@ label{
 }
 .css-1480iag-MuiInputBase-root-MuiInput-root {
     color: white !important;
+    margin-bottom: 4px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 840px) {
     .divSearch{
         min-width: 100% !important;   
+    }
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+        width: 87% !important;
     }
 }

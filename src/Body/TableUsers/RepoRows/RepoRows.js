@@ -42,59 +42,82 @@ export const RepoRows = (props) => {
                     </Grid>
             </Toolbar>
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Toolbar className='repoTableUnder'>
+                <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item className='repoTableGrid'>
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Surname</p>
+                        </Grid>
+                        <Grid item xs={10}>
                             <p><b>{props.surname}</b></p> 
                         </Grid>
                     </Grid>
                 </Toolbar>    
-                <Toolbar className='repoTableUnder'>
+                <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item className='repoTableGrid'>
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Name</p>
+                        </Grid>
+                        <Grid item xs={10}>
                             <p><b>{props.name}</b></p> 
                         </Grid>
                     </Grid>
                 </Toolbar>
-                <Toolbar className='repoTableUnder'>
+                <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item className='repoTableGrid'> 
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Login</p>
+                        </Grid>
+                        <Grid item xs={10}> 
                             <p><b>{props.login}</b></p>
                         </Grid>
                     </Grid>
                 </Toolbar>    
-                <Toolbar className='repoTableUnder'>
+                <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item className='repoTableGrid'>
-                            <p>
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Link</p>
+                        </Grid>
+                        <Grid item xs={10} className='repoTableGridLinkPhone'>
                                 <a href={props.link}>
                                     <button className='buttonLinkRepo'>
                                         <i className="fa fa-github"></i>
                                     </button>
                                 </a>
-                            </p>
                         </Grid>
                     </Grid>
                 </Toolbar>
-                <Toolbar className='repoTableUnder'>
+                <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item className='repoTableGrid'>
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Commits</p>
+                        </Grid>
+                        <Grid item xs={10}>
                             <p><b>4</b></p>
                         </Grid>
                     </Grid>
                 </Toolbar>
-                <Toolbar className='repoTableUnder'>
+                <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item className='repoTableGrid'> 
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Creation Date</p>
+                        </Grid>
+                        <Grid item xs={10}>
                             <p><b>{changeDate(props.creationDate)}</b></p>
                         </Grid>
                     </Grid>
                 </Toolbar>
-                <Toolbar className='repoTableUnder'>
+                <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item className='repoTableGrid'> 
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Last Update</p>
+                        </Grid>
+                        <Grid item xs={10}> 
                             <p><b>{changeDate(props.lastUpdate)}</b></p>
                         </Grid>
+                    </Grid>
+                </Toolbar>
+                <Toolbar className='repoTableTailUnderPhone'>
+                    <Grid container columns={16}>
                     </Grid>
                 </Toolbar>
             </Collapse>

@@ -11,7 +11,7 @@ export const Header = () => {
                 <Toolbar className='Header'>
                     <Grid container spacing={1}>
                         <Grid item xs={1} className="gridLogo">
-                            <i className="fa fa-user"></i>
+                            <i className="fa fa-github-square"></i>
                         </Grid>
                         <Grid item xs={7}>  
                         </Grid>
@@ -23,7 +23,7 @@ export const Header = () => {
                 <Toolbar className='headerPhone'>
                     <Grid container spacing={1}>
                         <Grid item className="gridLogo" xs={12}>
-                            <i className="fa fa-user"></i>
+                            <i className="fa fa-github-square"></i>
                         </Grid>
                     </Grid>
                 </Toolbar>

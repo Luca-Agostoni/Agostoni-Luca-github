@@ -8,7 +8,7 @@ export const SearchField = () => {
         <div className="divSearch">
             <Box className="searchField" sx={{ display: 'flex', alignItems: 'flex-end' }}>
                 <Search sx={{ color: 'action.active', mr: 1, my: 0.1 }} />
-                <TextField id="input-with-sx" label="Cerca" variant="standard" />
+                <TextField id="input-with-sx" variant="standard" />
             </Box>
         </div>
     );

@@ -8,8 +8,8 @@
 }
 .formBodySecond{
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .fa-repeat{
     padding: 5%;
@@ -51,12 +51,14 @@
     font-size: 20px;
     font: bolder;
 }
+.divWait{
+    padding-top: 150px;
+}
 @media only screen and (max-width: 600px) {
     .divUpdateButton{
         padding-top: 10%;
     }
-    .formBodySecond {
-        padding-left: 5%;
-        padding-right: 5%;
+    .updateButton{
+        width: 40%;
     }
 }

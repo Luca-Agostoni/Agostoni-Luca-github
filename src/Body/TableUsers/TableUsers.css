@@ -39,7 +39,7 @@
 .css-1q1u3t4-MuiTableRow-root {
     border-radius: 5px !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 840px) {
     .formTable{
         display: none !important;
     }
