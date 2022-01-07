@@ -59,7 +59,7 @@
     background-color: rgb(65, 105, 225);
 }
 .iconWait{
-    font-size: 40px;
+    font-size: 40px !important;
 }
 @media only screen and (max-width: 840px) {
     .divUpdateButton{
