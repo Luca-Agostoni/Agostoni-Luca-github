@@ -15,11 +15,6 @@
     padding: 5%;
 }
 
-.css-18lrjg1-MuiCircularProgress-root{
-    width: 150px !important;
-    height: 150px !important;
-    top: 50% !important;
-}
 .divUpdateButton{
     width: 100%;
     padding: 2%;
@@ -60,6 +55,8 @@
 }
 .iconWait{
     font-size: 40px !important;
+    width: 150px !important;
+    height: 150px !important;
 }
 @media only screen and (max-width: 840px) {
     .divUpdateButton{

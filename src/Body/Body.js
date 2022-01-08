@@ -43,7 +43,7 @@ export const Body = () => {
                 <div className='divWait'>
                     <CircularProgress className="iconWait" />
                     <br></br>
-                    <p className='textWait'><b>Attenda qualche istante...</b></p>
+                    <p className='textWait'><b>Wait a few moments...</b></p>
                 </div>
                 
             )
