@@ -4,7 +4,7 @@ export const TotRepos = (props) => {
     return(
         <div className="TotRepos">
             <div className="TotReposCell">
-                Totale repos: {props.totRepos}
+                Total repos: {props.totRepos}
             </div>
         </div>
     );

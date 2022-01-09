@@ -6,22 +6,22 @@ import React from 'react';
 
 export const Selection = () => {
 
-    const [age, setAge] = React.useState('');
+    const [filter, setFilter] = React.useState('');
 
     const handleChange = (event) => {
-      setAge(event.target.value);
+      setFilter(event.target.value);
     };
   
     return(
             <FormControl className="inputLabel" sx={{ m: 1, minWidth: "80%"}}>
                 <Select
                 className="selectionSelect"
-                value={age}
+                value={filter}
                 onChange={handleChange}
                 displayEmpty
                 inputProps={{ 'aria-label': 'Without label' }}>
                     <MenuItem value="" className="inputLabelClass">
-                        <em>Classe</em>
+                        <em>Class</em>
                     </MenuItem>
                     <MenuItem className="inputLabelOption" value={"FullStack Developer 2020/2022"}>FullStack Developer 2020/2022</MenuItem>
                     <MenuItem className="inputLabelOption" value={"FullStack Developer 2021/2023"}>FullStack Developer 2021/2023</MenuItem>
