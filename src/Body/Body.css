@@ -12,7 +12,8 @@
     padding-right: 5%;
 }
 .fa-repeat{
-    padding: 5%;
+    padding: 10px;
+    font-size: 30px;
 }
 
 .divUpdateButton{
@@ -24,16 +25,21 @@
     border-radius: 0 5px 0 0;
 }
 .updateButton{
-    width: 15%;
     color: white;
     border-radius: 5px;
-    font-size: 20px;
-    background-color: rgb(134, 163, 248);
-    border: rgb(134, 163, 248) solid 1px;
+    font-size: 0px;
+    background-color: royalblue;
+    border: rgb(134, 163, 248) solid 2px;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
 }
 .updateButton:hover{
-    background-color: royalblue;
-    border-color: royalblue;
+    background-color: rgb(134, 163, 248) ;
+    font-size: 20px;
 }
 .updateButton:active{
     background-color: royalblue;
@@ -62,7 +68,5 @@
     .divUpdateButton{
         padding-top: 10%;
     }
-    .updateButton{
-        width: 40%;
-    }
+
 }

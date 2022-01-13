@@ -24,7 +24,7 @@ export const Top = (props) => {
             <Toolbar className='topPhone'>
                 <Grid container spacing={1}>
                     <Grid item xs={12} className='topPhoneLevel'>
-                        <TotRepos totRepos={props.totRepos}/> 
+                        <SearchField/>
                     </Grid>
                 </Grid>
             </Toolbar>
@@ -38,7 +38,7 @@ export const Top = (props) => {
             <Toolbar className='topPhone'>
                 <Grid container spacing={1}>
                     <Grid item xs={12} className='topPhoneLevel'>
-                        <SearchField/>
+                        <TotRepos totRepos={props.totRepos}/> 
                     </Grid>
                 </Grid>
             </Toolbar>

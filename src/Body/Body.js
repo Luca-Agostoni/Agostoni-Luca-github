@@ -29,11 +29,10 @@ export const Body = () => {
             (
                 <div className="formBodySecond">
                     <Top totRepos={repos.length}/>
-                    <div className="divUpdateButton">
                         <button className="updateButton" onClick={() => handleLoadClick()}>
+                            <b className='reloadText'>Reload</b>
                             <i className="fa fa-repeat"></i>
                         </button>
-                    </div>
                     <TableUsers dataRepositorie={repos}/>
                 </div>
             )
