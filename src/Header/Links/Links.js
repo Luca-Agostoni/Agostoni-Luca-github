@@ -6,8 +6,8 @@ export const Links = () => {
     return(
         <div className="formLinks">
             <ButtonGroup variant="text" aria-label="text button group" className="linkSectionGroup">
-                <Button className="linkSection"  href="App.js"><p className="linkTxt">View repos</p></Button>
-                <Button className="linkSection" href="App.js"><p className="linkTxt">New user</p></Button>
+                <Button className="linkSection"  href="App.js"><i className="fa fa-home"></i></Button>
+                <Button className="linkSection" href="App.js"><i className="fa fa-user-plus"></i></Button>
             </ButtonGroup>
         </div>
     );

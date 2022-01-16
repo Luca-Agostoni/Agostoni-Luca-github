@@ -15,17 +15,16 @@ export const Body = () => {
         populateRepos();
         
     }, [])
-
     const handleLoadClick = () => {
-        const populateRepos = async () => {
-            setRepos(await listRepos());
-        };
-        populateRepos();
+        // const populateRepos = async () => {
+        //     setRepos(await listRepos());
+        // };
+        // populateRepos();
     }
-
+    
     return(
         <div className='formBodyFirst'>
-        {repos &&
+        {(repos)  &&
             (
                 <div className="formBodySecond">
                     <Top totRepos={repos.length}/>
@@ -37,7 +36,7 @@ export const Body = () => {
                 </div>
             )
         }
-        {!repos &&
+        {(!repos) &&
             (
                 <div className='divWait'>
                     <CircularProgress className="iconWait" />

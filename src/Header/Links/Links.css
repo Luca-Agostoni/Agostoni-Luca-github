@@ -9,6 +9,7 @@
     background-color: royalblue !important;
     text-transform: none !important;
     border-color: rgb(134, 163, 248) !important;
+    min-width: 80px !important;
 }
 .linkSection:hover{
     color: white !important;
@@ -17,21 +18,23 @@
 .linkTxt{
     margin: 0 !important;
 }
-
+.fa-home{
+    font-size: 20px;
+}
+.fa-user-plus{
+    font-size: 17px;
+}
 .linkSectionGroup{
     border: 0.5px solid rgba(255, 255, 255, 0.575) !important;
     
     border-radius: 5px 5px 5px 5px !important;
 }
-@media only screen and (max-width: 780px) {
-    .linkTxt{
-        margin: 0 !important;
-        font-size: 10px !important;
-    }
-}
 @media only screen and (max-width: 600px) {
-    .linkTxt{
-        font-size: 15px !important;
+    .fa-home{
+        font-size: 25px;
+    }
+    .fa-user-plus{
+        font-size: 23px;
     }
     .linkSectionGroup{
         width: 100% !important;

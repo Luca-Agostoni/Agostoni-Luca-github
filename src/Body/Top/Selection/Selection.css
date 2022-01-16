@@ -6,6 +6,17 @@
     background-color: royalblue  !important;
     width: 80% !important;
 }
+.inputClasses{
+    color: white !important;
+    height: 40px !important;
+    min-height: 40px !important;
+}
+.inputClasses.placeholder{
+    width: 100% !important;
+    text-align: center !important;
+    color: white !important;
+    margin-top: -5px !important;
+}
 .inputLabelClass{
     color: white !important;
     font-size: bold !important;
@@ -26,23 +37,27 @@
     background-color: rgb(120, 149, 236)  !important;
 }
 .selectionSelect{
-    margin: 0 !important;
-    height: 40px;
-    min-height: 40px !important;
     color: white !important;
+    margin: 0 !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    width: 100% !important;
 }
 ul{
+    color: white !important;
     background-color: rgb(95, 129, 230)  !important;
 }
 svg{
     color: white !important;
 }
 fieldset{
+    color: white !important;
     border: solid 0.1rem !important;
     border-color: rgb(120, 149, 236) !important;
 }
 @media only screen and (max-width: 840px) {
     .inputLabel{
+        color: white !important;
         min-width: 100% !important;   
     }
 }
