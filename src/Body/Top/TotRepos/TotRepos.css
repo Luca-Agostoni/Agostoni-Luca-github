@@ -35,9 +35,13 @@
     width: 100% !important;
     border: solid 0.1rem !important;
     border-color: rgb(120, 149, 236) !important;
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
 @media only screen and (max-width: 840px) {
     .TotRepos{
         min-width: 100% !important;   
+    }
+    .TotReposCell{
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 8%), 0 6px 20px 0 rgb(0 0 0 / 10%) !important;
     }
 }

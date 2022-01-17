@@ -5,6 +5,7 @@
     color: white !important;
     background-color: royalblue  !important;
     width: 80% !important;
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
 .inputClasses{
     color: white !important;
@@ -30,7 +31,7 @@
 }
 .inputLabelOption:hover{
     color: white !important;
-    background-color: rgb(134, 163, 248) !important;
+    background-color: royalblue !important;
 }
 .inputLabel:hover{
     color: white !important;
@@ -59,5 +60,6 @@ fieldset{
     .inputLabel{
         color: white !important;
         min-width: 100% !important;   
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 8%), 0 6px 20px 0 rgb(0 0 0 / 10%) !important;
     }
 }

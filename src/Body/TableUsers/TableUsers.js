@@ -4,6 +4,8 @@ import { Grid } from '@mui/material';
 import { Toolbar } from '@mui/material';
 
 export const TableUsers = (props) => {
+    const searchDataOut = props.searchDataOut;
+    const repos = props.repos;
     return(
         <>
         <div className="formTablePhone">
@@ -18,17 +20,17 @@ export const TableUsers = (props) => {
                     </Grid>
                 </Toolbar>
                 {
-                    props.dataRepositorie.map(
-                        repos => (
+                    repos.filter(repo=>repo.surname.includes(searchDataOut)).map(
+                        repo => (
                             <RepoRows 
-                                name={repos.name} 
-                                surname={repos.surname} 
-                                login={repos.login} 
-                                repoName={repos.repoName} 
-                                link={repos.link}
-                                creationDate={repos.creationDate}
-                                lastUpdate={repos.lastUpdate}
-                                key={repos.link}
+                                name={repo.name} 
+                                surname={repo.surname} 
+                                login={repo.login} 
+                                repoName={repo.repoName} 
+                                link={repo.link}
+                                creationDate={repo.creationDate}
+                                lastUpdate={repo.lastUpdate}
+                                key={repo.link}
                             />
                         )
                     )
@@ -68,17 +70,17 @@ export const TableUsers = (props) => {
                     </Grid>
                 </Toolbar>
                 {
-                    props.dataRepositorie.map(
-                        repos => (
+                    repos.filter(repo=>repo.surname.includes(searchDataOut)).map(
+                        repo => (
                             <RepoRows 
-                                name={repos.name} 
-                                surname={repos.surname} 
-                                login={repos.login} 
-                                repoName={repos.repoName} 
-                                link={repos.link}
-                                creationDate={repos.creationDate}
-                                lastUpdate={repos.lastUpdate}
-                                key={repos.link}
+                                name={repo.name} 
+                                surname={repo.surname} 
+                                login={repo.login} 
+                                repoName={repo.repoName} 
+                                link={repo.link}
+                                creationDate={repo.creationDate}
+                                lastUpdate={repo.lastUpdate}
+                                key={repo.link}
                             />
                         )
                     )

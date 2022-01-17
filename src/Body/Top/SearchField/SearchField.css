@@ -30,9 +30,10 @@
     background-color: royalblue  !important;
     height: 40px !important;
     color: white !important;
-    width: 100% !important;
+    width: 99.4% !important;
     border: solid 0.1rem !important;
     border-color: rgb(120, 149, 236) !important;
+    box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
 label{
     padding-top: 0 !important;
@@ -52,4 +53,9 @@ input{
     .inputTextField{
         width: 90% !important;
     }
+    .searchSlot{
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 10%) !important;
+    }
+
+
 }

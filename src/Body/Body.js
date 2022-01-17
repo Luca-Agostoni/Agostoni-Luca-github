@@ -2,49 +2,58 @@ import './Body.css';
 import {Top} from './Top/Top';
 import {TableUsers} from './TableUsers/TableUsers';
 import { listRepos } from '../api/repos';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { CircularProgress } from '@mui/material';
+import { useRepos } from '../hooks/useRepos';
 
 export const Body = () => {
-    const [repos, setRepos] = useState(undefined);
+    const {repos, setRepos, onError} = useRepos();
+    const [load, setLoad] = useState(false);
+    const [searchDataOut, setSearchDataOut] = useState('');
 
-    useEffect(() => {
+    const handleLoadClick = () => {
         const populateRepos = async () => {
-            setRepos(await listRepos());
+            setLoad(listRepos());
+            setLoad(load)
         };
         populateRepos();
-        
-    }, [])
-    const handleLoadClick = () => {
-        // const populateRepos = async () => {
-        //     setRepos(await listRepos());
-        // };
-        // populateRepos();
     }
     
     return(
         <div className='formBodyFirst'>
-        {(repos)  &&
+        {(repos && !onError) &&
             (
                 <div className="formBodySecond">
-                    <Top totRepos={repos.length}/>
+                    <Top totRepos={repos.length} setSearchDataOut={setSearchDataOut}/>
                         <button className="updateButton" onClick={() => handleLoadClick()}>
-                            <b className='reloadText'>Reload</b>
+                            <div></div>
+                            <b className='reloadText'>Reload repos</b>
                             <i className="fa fa-repeat"></i>
                         </button>
-                    <TableUsers dataRepositorie={repos}/>
+                        <TableUsers repos={repos}  searchDataOut={searchDataOut} dataRepositorie={repos}/>
                 </div>
             )
         }
-        {(!repos) &&
+        {!repos &&
             (
                 <div className='divWait'>
                     <CircularProgress className="iconWait" />
                     <br></br>
                     <p className='textWait'><b>Wait a few moments...</b></p>
-                </div>
-                
+                </div>             
             )
+        }
+        {load &&
+            (
+                <div className='divloading'>
+                    <div className='divLoad'>
+                        <CircularProgress className="iconWait" />
+                    </div>             
+                </div>
+            )               
+        }
+        {onError &&
+            <p>Error</p>
         }
         </div>
     );

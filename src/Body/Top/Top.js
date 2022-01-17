@@ -17,7 +17,7 @@ export const Top = (props) => {
                         <Selection/>
                     </Grid>
                     <Grid item xs={4} className='Top3'>
-                        <SearchField/>
+                        <SearchField setSearchDataOut={props.setSearchDataOut}/>
                     </Grid>
                 </Grid>
             </Toolbar>

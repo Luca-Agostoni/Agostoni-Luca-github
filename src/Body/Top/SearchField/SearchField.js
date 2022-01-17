@@ -33,7 +33,6 @@ const Search = styled('div')(({ theme }) => ({
     color: 'inherit',
     '& .MuiInputBase-input': {
       padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create('width'),
       width: '100%',
@@ -44,19 +43,28 @@ const Search = styled('div')(({ theme }) => ({
   }));
 
 
-export const SearchField = () => {
-    return(
-        <div className="divSearch">
-                <Search className="searchSlot">
-                    <SearchIconWrapper className='iconSlot'>
-                        <SearchIcon />
-                    </SearchIconWrapper>
-                    <StyledInputBase
-                    className="inputTextField"
-                    placeholder="Search…"
-                    inputProps={{ 'aria-label': 'search' }}
-                    />
-                </Search>
-        </div>
-    );
+
+export const SearchField = (props) => {
+  
+  const searchFiltered = (props) => {
+    const searchData = document.getElementById("search").value;
+    props.setSearchDataOut(searchData);
+  }
+
+  return(
+    <div className="divSearch">
+            <Search className="searchSlot">
+                <SearchIconWrapper className='iconSlot'>
+                    <SearchIcon />
+                </SearchIconWrapper>
+                <StyledInputBase
+                onChange={() =>searchFiltered(props)}
+                id="search"
+                className="inputTextField"
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+                />
+            </Search>
+    </div>
+  );  
 }
