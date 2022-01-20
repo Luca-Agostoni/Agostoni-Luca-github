@@ -6,14 +6,15 @@ import { Grid } from '@mui/material';
 export const Header = () => {
     return(
         <div className="formHeader">
+            <div className='divHeader'>
                 <Toolbar className='Header'>
                     <Grid container spacing={1}>
                         <Grid item xs={1} className="gridLogo">
                             <i className="fa fa-github-square"></i>
                         </Grid>
-                        <Grid item xs={7}>  
+                        <Grid item xs={4}>  
                         </Grid>
-                        <Grid item xs={4} className='gridButton'>
+                        <Grid item xs={7} className='gridButton'>
                             <Links/>
                         </Grid>
                     </Grid>
@@ -32,6 +33,7 @@ export const Header = () => {
                         </Grid>
                     </Grid>
                 </Toolbar>
+            </div>
         </div>
     );
 }

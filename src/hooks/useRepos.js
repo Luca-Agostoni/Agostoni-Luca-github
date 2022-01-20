@@ -5,11 +5,18 @@ export const useRepos = () => {
 
     const [repos, setRepos] = useState([]);
     const [onError, setOnError] = useState(false);
+    const [load, setLoad] = useState(false);
+    const [fullRepo, setFullRepo] = useState(true);
 
     useEffect(() => {
         const populateRepos = async () => {
+            console.log("sos");
         try {
+            setFullRepo(false);
+            setLoad(true);
             setRepos(await listRepos());
+            setLoad(false);
+            setFullRepo(true);
             
         } catch (err) {
             setOnError(true);
@@ -17,5 +24,5 @@ export const useRepos = () => {
         }
         populateRepos();
     }, []) 
-    return {repos, setRepos, onError}
+    return {repos, setRepos, onError, load, useEffect, fullRepo}
 }

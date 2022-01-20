@@ -20,8 +20,9 @@ export const TableUsers = (props) => {
                     </Grid>
                 </Toolbar>
                 {
-                    repos.filter(repo=>repo.surname.includes(searchDataOut)).map(
-                        repo => (
+                    repos.filter(repo=>
+                    (repo.repoName.includes(searchDataOut))
+                    ).map(repo => (
                             <RepoRows 
                                 name={repo.name} 
                                 surname={repo.surname} 
@@ -70,8 +71,11 @@ export const TableUsers = (props) => {
                     </Grid>
                 </Toolbar>
                 {
-                    repos.filter(repo=>repo.surname.includes(searchDataOut)).map(
-                        repo => (
+                    repos.filter(repo=>(repo.surname.includes(searchDataOut)) || 
+                                (repo.name.includes(searchDataOut)) || 
+                                (repo.login.includes(searchDataOut)) || 
+                                (repo.repoName.includes(searchDataOut))
+                                ).map(repo => (
                             <RepoRows 
                                 name={repo.name} 
                                 surname={repo.surname} 

@@ -40,7 +40,7 @@
         display: block !important;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800) {
     .formTop{
         padding-top: 17% !important;
         padding-bottom: 0 !important;

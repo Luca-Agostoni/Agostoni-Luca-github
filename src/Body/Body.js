@@ -1,31 +1,22 @@
 import './Body.css'; 
 import {Top} from './Top/Top';
 import {TableUsers} from './TableUsers/TableUsers';
-import { listRepos } from '../api/repos';
 import { useState } from 'react';
 import { CircularProgress } from '@mui/material';
 import { useRepos } from '../hooks/useRepos';
 
 export const Body = () => {
-    const {repos, setRepos, onError} = useRepos();
-    const [load, setLoad] = useState(false);
+    const {repos, onError, load, fullRepo, useEffect} = useRepos();
     const [searchDataOut, setSearchDataOut] = useState('');
 
-    const handleLoadClick = () => {
-        const populateRepos = async () => {
-            setLoad(listRepos());
-            setLoad(load)
-        };
-        populateRepos();
-    }
     
     return(
         <div className='formBodyFirst'>
-        {(repos && !onError) &&
+        {(fullRepo && repos && !onError) &&
             (
                 <div className="formBodySecond">
                     <Top totRepos={repos.length} setSearchDataOut={setSearchDataOut}/>
-                        <button className="updateButton" onClick={() => handleLoadClick()}>
+                        <button className="updateButton" onClick={useEffect}>
                             <div></div>
                             <b className='reloadText'>Reload repos</b>
                             <i className="fa fa-repeat"></i>
@@ -34,7 +25,7 @@ export const Body = () => {
                 </div>
             )
         }
-        {!repos &&
+        {load &&
             (
                 <div className='divWait'>
                     <CircularProgress className="iconWait" />
@@ -43,7 +34,7 @@ export const Body = () => {
                 </div>             
             )
         }
-        {load &&
+        {/* {load &&
             (
                 <div className='divloading'>
                     <div className='divLoad'>
@@ -51,7 +42,7 @@ export const Body = () => {
                     </div>             
                 </div>
             )               
-        }
+        } */}
         {onError &&
             <p>Error</p>
         }

@@ -58,11 +58,11 @@ export const SearchField = (props) => {
                     <SearchIcon />
                 </SearchIconWrapper>
                 <StyledInputBase
-                onChange={() =>searchFiltered(props)}
-                id="search"
-                className="inputTextField"
-                placeholder="Search…"
-                inputProps={{ 'aria-label': 'search' }}
+                  onChange={() =>searchFiltered(props)}
+                  id="search"
+                  className="inputTextField"
+                  placeholder="Search…"
+                  inputProps={{ 'aria-label': 'search' }}
                 />
             </Search>
     </div>

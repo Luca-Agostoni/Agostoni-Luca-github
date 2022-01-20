@@ -2,10 +2,15 @@
     height: 10%;
     width: 100%;
     text-align: left;
+    
+}
+.divHeader{
+    width: 100%;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 15%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
-
 .Header{
+    padding-top: 15px;
+    padding-bottom: 15px;
     min-height: 100% !important;
     background-color: royalblue !important;
 }
@@ -27,12 +32,13 @@
 }
 @media only screen and (max-width: 780px) {
     .fa-github-square{
-        font-size: 50px;
+        padding-top: 8px;
+        font-size: 70px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .fa-github-square{
-        font-size: 50px;
+        font-size: 70px;
         margin: 1%;
     }
     .Header{

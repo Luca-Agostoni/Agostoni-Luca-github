@@ -75,7 +75,7 @@ export const RepoRows = (props) => {
                                 <p>
                                     <a href={props.link}>
                                         <button className='buttonLinkRepoGit'>
-                                            <i class="fa fa-github"></i>
+                                            <i className="fa fa-github"></i>
                                         </button>
                                     </a>
                                 </p>
