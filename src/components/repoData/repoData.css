@@ -7,6 +7,16 @@
 .buttonRow {
     background-color: royalblue !important;
 }
+.buttonRowPhone {
+    margin-top: 8px !important;
+    width: 50% !important;
+    height: 70% !important;
+    border-radius: 10px !important;
+    background-color: royalblue !important;
+}
+.buttonRowPhone:hover {
+    background-color: rgb(120, 149, 236)  !important;
+}
 .buttonPoint{
     background-color: royalblue !important;
     cursor:default !important;
@@ -91,9 +101,9 @@
 .buttonLinkRepoGit{
     background-color: royalblue !important;
     border: 0;
-    border-radius: 100%;
-    width: 35px !important;
-    height: 35px !important;
+    width: 50% !important;
+    height: 85% !important;
+    border-radius: 10px !important;
     user-select: none;
     display: inline-block;
     color: white;

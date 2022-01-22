@@ -161,7 +161,7 @@ export const RepoData = (props) => {
                         </Grid>
                         <Grid item xs={10}>
                             <Link to="details">
-                                <IconButton className='buttonRow' aria-label="expand row" size="small">
+                                <IconButton className='buttonRowPhone' aria-label="expand row" size="small">
                                     <KeyboardArrowRightIcon />
                                 </IconButton>
                             </Link>
