@@ -3,16 +3,17 @@ import { DateTime } from 'luxon';
 import { IconButton } from '@mui/material';
 import { Collapse } from '@mui/material';
 import React from 'react';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './RepoRows.css';
 import { Grid } from '@mui/material';
 import { Toolbar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export const RepoRows = (props) => {
 
     const [open, setOpen] = React.useState(false);
-    const linkName = props.repoName;
 
     function changeDate (date){
         const result = DateTime.fromISO(date).setLocale('it').toFormat('dd LLL yyyy');
@@ -36,7 +37,7 @@ export const RepoRows = (props) => {
                             <p>
                                 <a href={props.link}>
                                     <button className='buttonLinkRepo'>
-                                        <b>{linkName}</b>
+                                        <b>{props.repoName}</b>
                                     </button>
                                 </a>
                             </p>
@@ -52,59 +53,22 @@ export const RepoRows = (props) => {
                         </Grid>
                         <Grid item xs={2} className='repoTableGrid'> 
                             <p>
-                            <IconButton className='buttonRow' aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
-                                {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-                            </IconButton>
+                            <Link to={props.repoName} repos={props}>
+                                <IconButton className='buttonRow' aria-label="expand row" size="small">
+                                    <KeyboardArrowRightIcon />
+                                </IconButton>
+                            </Link>
                             </p>
                         </Grid>
                     </Grid>
             </Toolbar>
-            <Collapse in={open} timeout="auto" unmountOnExit>
-                <Toolbar className='repoTableUnder'>
-                        <Grid container columns={30}>
-                            <Grid item xs={3} className='repoTableGrid'>
-                                <p><b>{props.surname}</b></p> 
-                            </Grid>
-                            <Grid item xs={3} className='repoTableGrid'>
-                                <p><b>{props.name}</b></p> 
-                            </Grid>
-                            <Grid item xs={5} className='repoTableGrid'> 
-                                <p><b>{props.login}</b></p>
-                            </Grid>
-                            <Grid item xs={6} className='repoTableGrid'>
-                                <p>
-                                    <a href={props.link}>
-                                        <button className='buttonLinkRepoGit'>
-                                            <i className="fa fa-github"></i>
-                                        </button>
-                                    </a>
-                                </p>
-                            </Grid>
-                            <Grid item xs={3} className='repoTableGrid'>
-                                <p><b>4</b></p>
-                            </Grid>
-                            <Grid item xs={4} className='repoTableGrid'> 
-                                <p><b>{changeDate(props.creationDate)}</b></p>
-                            </Grid>
-                            <Grid item xs={4} className='repoTableGrid'> 
-                                <p><b>{changeDate(props.lastUpdate)}</b></p>
-                            </Grid>
-                            <Grid item xs={2} className='repoTableGrid'> 
-                                <p>
-                                <IconButton className='buttonPoint' aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
-                                </IconButton>
-                                </p>
-                            </Grid>
-                        </Grid>
-                </Toolbar>
-            </Collapse>
 
 {/* ////////////////////////////// */}
 
             <Toolbar className='repoTablePhone'>
                     <Grid container columns={16}>
                         <Grid item xs={10} className='repoTableGrid'>
-                            <p>{linkName}</p> 
+                            <p>{props.repoName}</p> 
                         </Grid>
                         <Grid item xs={6} className='repoTableGrid'> 
                             <p>
@@ -153,7 +117,7 @@ export const RepoRows = (props) => {
                         </Grid>
                         <Grid item xs={10} className='repoTableGridLinkPhone'>
                                 <a href={props.link}>
-                                    <button className='buttonLinkRepo'>
+                                    <button className='buttonLinkRepoGit'>
                                         <i className="fa fa-github"></i>
                                     </button>
                                 </a>
@@ -187,6 +151,20 @@ export const RepoRows = (props) => {
                         </Grid>
                         <Grid item xs={10}> 
                             <p><b>{changeDate(props.lastUpdate)}</b></p>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+                <Toolbar className='repoTableUnderPhone'>
+                    <Grid container columns={16}>
+                        <Grid item xs={6} className='repoTableGridPhone'> 
+                            <p>Details</p>
+                        </Grid>
+                        <Grid item xs={10}>
+                            <Link to="details">
+                                <IconButton className='buttonRow' aria-label="expand row" size="small">
+                                    <KeyboardArrowRightIcon />
+                                </IconButton>
+                            </Link>
                         </Grid>
                     </Grid>
                 </Toolbar>

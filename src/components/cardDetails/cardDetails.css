@@ -1,0 +1,21 @@
+.cardDetailsTable{
+    color: rgb(88, 127, 247) !important;
+    border-bottom: 0 !important;
+    border-right: solid 2px !important;
+    border-left: solid 2px !important;
+    border-top:  solid 0.5px rgb(173, 189, 236)!important;
+    padding: 0 !important;
+    min-height: 0 !important;
+}
+.cardDetails{
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+}
+.cardDetailsColonumLeft{  
+    color: black !important;
+}

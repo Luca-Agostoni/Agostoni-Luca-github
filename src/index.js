@@ -9,6 +9,7 @@ import Classes from './pages/classes/classes';
 import NotFound from './pages/notFound/notFound';
 import reportWebVitals from './reportWebVitals';
 import Repos from './pages/repos/repos';
+import Details from './pages/details/details';
 import {
   BrowserRouter,
   Routes,
@@ -22,7 +23,9 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route path="users" element={<Users />} />
           <Route path="classes" element={<Classes />} />
-          <Route path="repos" element={<Repos />} />
+          <Route path="repos" element={<Repos />}>
+            <Route path=":repoName" element={<Details />} />
+          </Route>
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="logout" element={<Logout />} />

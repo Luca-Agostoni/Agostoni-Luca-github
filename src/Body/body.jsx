@@ -1,4 +1,4 @@
-import './Body.css'; 
+import './body.css'; 
 import {Top} from './Top/Top';
 import {TableUsers} from './TableUsers/TableUsers';
 import { useState } from 'react';
