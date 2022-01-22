@@ -1,9 +1,9 @@
-import './TableUsers.css';
-import { RepoRows } from './RepoRows/RepoRows';
+import './repoField.css';
+import { RepoData } from '../repoData/repoData';
 import { Grid } from '@mui/material';
 import { Toolbar } from '@mui/material';
 
-export const TableUsers = (props) => {
+export const RepoField = (props) => {
     const searchDataOut = props.searchDataOut;
     const repos = props.repos;
     return(
@@ -23,7 +23,7 @@ export const TableUsers = (props) => {
                     repos.filter(repo=>
                     (repo.repoName.includes(searchDataOut))
                     ).map(repo => (
-                            <RepoRows 
+                            <RepoData 
                                 name={repo.name} 
                                 surname={repo.surname} 
                                 login={repo.login} 
@@ -76,7 +76,7 @@ export const TableUsers = (props) => {
                                 (repo.login.includes(searchDataOut)) || 
                                 (repo.repoName.includes(searchDataOut))
                                 ).map(repo => (
-                            <RepoRows 
+                            <RepoData 
                                 name={repo.name} 
                                 surname={repo.surname} 
                                 login={repo.login} 

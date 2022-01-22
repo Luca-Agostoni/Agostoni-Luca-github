@@ -1,9 +1,9 @@
-import './Header.css';
-import {Links} from "./Links/Links"
+import './headerField.css';
+import {Links} from "../links/links"
 import { Toolbar } from '@mui/material';
 import { Grid } from '@mui/material';
 
-export const Header = () => {
+export const HeaderField = () => {
     return(
         <div className="formHeader">
             <div className='divHeader'>

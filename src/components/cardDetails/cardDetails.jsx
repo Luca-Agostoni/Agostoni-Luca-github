@@ -11,6 +11,13 @@ export const CardDetails = (props) => {
     }
     return(
         <div className="cardDetails">
+            <Toolbar className='cardDetailsTableHead'>
+                    <Grid container columns={16}>
+                        <Grid item xs={16}>
+                            <p><i className="fa fa-dot-circle-o"></i><b>{props.repoName}</b><i className="fa fa-dot-circle-o"></i></p> 
+                        </Grid>
+                    </Grid>
+            </Toolbar>
            <Toolbar className='cardDetailsTable'>
                 <Grid container columns={16}>
                     <Grid item xs={6} className='cardDetailsColonumLeft'> 
@@ -106,7 +113,7 @@ export const CardDetails = (props) => {
                         </Grid>
                     </Grid>
                 </Toolbar>
-                <Toolbar className='cardDetailsTable'>
+                <Toolbar className='cardDetailsTableFinal'>
                     <Grid container columns={16}>
                     </Grid>
                 </Toolbar>

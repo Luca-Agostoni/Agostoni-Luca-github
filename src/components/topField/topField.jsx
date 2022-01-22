@@ -1,11 +1,11 @@
-import './Top.css';
-import {TotRepos} from './TotRepos/TotRepos';
-import {Selection} from './Selection/Selection';
-import {SearchField} from './SearchField/SearchField';
+import './topField.css';
+import {TotRepos} from '../totRepos/totRepos';
+import {Selection} from '../selection/selection';
+import {SearchField} from '../searchField/searchField';
 import { Toolbar } from '@mui/material';
-import { Grid } from '@mui/material';
+import { Grid } from '@mui/material'; 
 
-export const Top = (props) => {
+export const TopField = (props) => {
     return(
         <div className="formTop">
              <Toolbar className='Top'>

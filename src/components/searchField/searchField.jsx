@@ -1,5 +1,5 @@
 import SearchIcon from '@mui/icons-material/Search';
-import './SearchField.css';
+import './searchField.css';
 import { styled, alpha } from '@mui/material/styles';
 import { InputBase } from '@mui/material';
 

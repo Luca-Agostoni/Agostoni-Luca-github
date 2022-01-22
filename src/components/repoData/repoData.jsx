@@ -6,12 +6,12 @@ import React from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import './RepoRows.css';
+import './repoData.css';
 import { Grid } from '@mui/material';
 import { Toolbar } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-export const RepoRows = (props) => {
+export const RepoData = (props) => {
 
     const [open, setOpen] = React.useState(false);
 

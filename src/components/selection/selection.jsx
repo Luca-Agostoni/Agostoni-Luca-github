@@ -1,4 +1,4 @@
-import './Selection.css';
+import './selection.css';
 import { FormControl } from '@mui/material';
 import { Autocomplete } from '@mui/material';
 import { TextField } from '@mui/material';

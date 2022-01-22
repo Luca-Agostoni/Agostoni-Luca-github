@@ -1,4 +1,4 @@
-import './Links.css';
+import './links.css';
 import { Button } from '@mui/material';
 import { ButtonGroup } from '@mui/material';
 import { Link } from "react-router-dom";

@@ -1,6 +1,6 @@
 import './repos.css';
 import * as React from 'react';
-import { Body } from '../../body/body';
+import { Body } from '../../components/body/body';
 import { Outlet } from 'react-router-dom';
 
 

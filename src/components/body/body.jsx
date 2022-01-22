@@ -1,9 +1,9 @@
 import './body.css'; 
-import {Top} from './Top/Top';
-import {TableUsers} from './TableUsers/TableUsers';
+import { TopField } from '../topField/topField';
+import {RepoField} from '../repoField/repoField';
 import { useState } from 'react';
 import { CircularProgress } from '@mui/material';
-import { useRepos } from '../hooks/useRepos';
+import { useRepos } from '../../hooks/useRepos';
 
 export const Body = () => {
     const {repos, onError, load, fullRepo, useEffect} = useRepos();
@@ -15,17 +15,17 @@ export const Body = () => {
         {(fullRepo && repos && !onError) &&
             (
                 <div className="formBodySecond">
-                    <Top totRepos={repos.length} setSearchDataOut={setSearchDataOut}/>
+                    <TopField totRepos={repos.length} setSearchDataOut={setSearchDataOut}/>
                         <button className="updateButton" onClick={useEffect}>
                             <div></div>
                             <b className='reloadText'>Reload repos</b>
                             <i className="fa fa-repeat"></i>
                         </button>
-                        <TableUsers repos={repos}  searchDataOut={searchDataOut} dataRepositorie={repos}/>
+                        <RepoField repos={repos}  searchDataOut={searchDataOut} dataRepositorie={repos}/>
                 </div>
             )
         }
-        {load &&
+        {(load && !onError) &&
             (
                 <div className='divWait'>
                     <CircularProgress className="iconWait" />

@@ -1,4 +1,4 @@
-import './TotRepos.css';
+import './totRepos.css';
 
 export const TotRepos = (props) => {
     return(
