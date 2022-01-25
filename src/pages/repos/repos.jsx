@@ -7,8 +7,9 @@ import { Outlet } from 'react-router-dom';
 function Repos() {
   return (
     <>
-    <Outlet/>
-    <Body/>
+    <Body>
+      <Outlet/>
+    </Body>
     </>
   );
 }

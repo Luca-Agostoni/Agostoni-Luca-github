@@ -24,7 +24,7 @@ ReactDOM.render(
           <Route path="users" element={<Users />} />
           <Route path="classes" element={<Classes />} />
           <Route path="repos" element={<Repos />}>
-            <Route path=":repoName" element={<Details />} />
+            <Route path=":repoName" element={<Details />}/>
           </Route>
         </Route>
         <Route path="login" element={<Login />} />

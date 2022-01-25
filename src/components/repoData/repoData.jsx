@@ -9,10 +9,39 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './repoData.css';
 import { Grid } from '@mui/material';
 import { Toolbar } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import { styled } from '@mui/system';
+import ModalUnstyled from '@mui/base/ModalUnstyled';
+import { useReposDetails } from '../../hooks/useReposDetails';
+
+
+const StyledModal = styled(ModalUnstyled)`
+  position: fixed;
+  z-index: 1300;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Backdrop = styled('div')`
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+`;
+
+
 
 export const RepoData = (props) => {
-
+    const {openDetail, handleClose, handleOpen} = useReposDetails();
     const [open, setOpen] = React.useState(false);
 
     function changeDate (date){
@@ -53,7 +82,7 @@ export const RepoData = (props) => {
                         </Grid>
                         <Grid item xs={2} className='repoTableGrid'> 
                             <p>
-                            <Link to={props.repoName} repos={props}>
+                            <Link to={props.repoName} onClick={handleOpen}>
                                 <IconButton className='buttonRow' aria-label="expand row" size="small">
                                     <KeyboardArrowRightIcon />
                                 </IconButton>
@@ -62,6 +91,19 @@ export const RepoData = (props) => {
                         </Grid>
                     </Grid>
             </Toolbar>
+            <Link to="/repos" onClick={handleClose}>
+                <StyledModal
+                    aria-labelledby="unstyled-modal-title"
+                    aria-describedby="unstyled-modal-description"
+                    open={openDetail}
+                    onClose={handleClose}
+                    BackdropComponent={Backdrop}
+                >
+                    <div className="detailsBox">
+                        <Outlet/>
+                    </div>
+                </StyledModal>
+            </Link>
 
 {/* ////////////////////////////// */}
 
@@ -160,7 +202,7 @@ export const RepoData = (props) => {
                             <p>Details</p>
                         </Grid>
                         <Grid item xs={10}>
-                            <Link to="details">
+                            <Link to={props.repoName} onClick={handleOpen}>
                                 <IconButton className='buttonRowPhone' aria-label="expand row" size="small">
                                     <KeyboardArrowRightIcon />
                                 </IconButton>

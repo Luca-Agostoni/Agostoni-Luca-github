@@ -98,6 +98,9 @@
     background-color: rgb(120, 149, 236)  !important;
     cursor: pointer;
 }
+.detailsBox{
+    width: 100% !important;
+}
 .buttonLinkRepoGit{
     background-color: royalblue !important;
     border: 0;
