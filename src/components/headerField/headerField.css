@@ -33,6 +33,7 @@
 @media only screen and (max-width: 780px) {
     .fa-github-square{
         padding-top: 8px;
+        padding-bottom: 8px;
         font-size: 70px;
     }
 }

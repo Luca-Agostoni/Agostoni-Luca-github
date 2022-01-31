@@ -51,6 +51,7 @@ export const SearchField = (props) => {
     props.setSearchDataOut(searchData);
   }
 
+
   return(
     <div className="divSearch">
             <Search className="searchSlot">

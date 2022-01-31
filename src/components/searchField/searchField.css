@@ -35,6 +35,7 @@
     border-color: rgb(120, 149, 236) !important;
     box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
+
 label{
     padding-top: 0 !important;
     color: white !important;
@@ -56,6 +57,4 @@ input{
     .searchSlot{
         box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 10%) !important;
     }
-
-
 }

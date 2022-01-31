@@ -6,13 +6,13 @@ import { CircularProgress } from '@mui/material';
 import { useRepos } from '../../hooks/useRepos';
 
 export const Body = () => {
-    const {repos, onError, load, fullRepo, useEffect} = useRepos();
+    const {repos, onError, load, useEffect} = useRepos();
     const [searchDataOut, setSearchDataOut] = useState('');
 
     
     return(
         <div className='formBodyFirst'>
-        {(fullRepo && repos && !onError) &&
+        {(!load && repos && !onError) &&
             (
                 <div className="formBodySecond">
                     <TopField totRepos={repos.length} setSearchDataOut={setSearchDataOut}/>

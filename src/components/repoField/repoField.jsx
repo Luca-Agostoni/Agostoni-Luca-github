@@ -2,6 +2,7 @@ import './repoField.css';
 import { RepoData } from '../repoData/repoData';
 import { Grid } from '@mui/material';
 import { Toolbar } from '@mui/material';
+import * as React from 'react';
 
 export const RepoField = (props) => {
     const searchDataOut = props.searchDataOut;
@@ -97,3 +98,20 @@ export const RepoField = (props) => {
         </>
     );
 }
+// {
+//     repos.filter(repo=>
+//     (repo.repoName.includes(searchDataPhone))
+//     ).map(repo => (
+//             <RepoData 
+//                 name={repo.name} 
+//                 surname={repo.surname} 
+//                 login={repo.login} 
+//                 repoName={repo.repoName} 
+//                 link={repo.link}
+//                 creationDate={repo.creationDate}
+//                 lastUpdate={repo.lastUpdate}
+//                 key={repo.link}
+//             />
+//         )
+//     )
+// }
