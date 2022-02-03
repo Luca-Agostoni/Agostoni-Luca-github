@@ -14,7 +14,6 @@ import { styled } from '@mui/system';
 import ModalUnstyled from '@mui/base/ModalUnstyled';
 import { useReposDetails } from '../../hooks/useReposDetails';
 
-
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
   z-index: 1300;
@@ -44,6 +43,12 @@ export const RepoData = (props) => {
     const {openDetail, handleClose, handleOpen} = useReposDetails();
     const [open, setOpen] = React.useState(false);
 
+    function checkModal (){
+        if (window.location.href === "http://localhost:3000/repos/casiraghi-davide-github"){
+            console.log("bubu");
+            handleOpen();  
+        }
+    }
     function changeDate (date){
         const result = DateTime.fromISO(date).setLocale('it').toFormat('dd LLL yyyy');
         return result;
@@ -51,7 +56,8 @@ export const RepoData = (props) => {
 
     return(
         <>
-            <Toolbar className='repoTable'>
+            <div></div>
+            <Toolbar className='repoTable' >
                     <Grid container columns={30}>
                         <Grid item xs={3} className='repoTableGrid'>
                             <p>{props.surname}</p> 
@@ -91,7 +97,7 @@ export const RepoData = (props) => {
                         </Grid>
                     </Grid>
             </Toolbar>
-            <Link to="/repos" onClick={handleClose}>
+            <Link to="/repos" className='linkPos' onClick={handleClose}>
                 <StyledModal
                     aria-labelledby="unstyled-modal-title"
                     aria-describedby="unstyled-modal-description"
@@ -196,9 +202,9 @@ export const RepoData = (props) => {
                         </Grid>
                     </Grid>
                 </Toolbar>
-                <Toolbar className='repoTableUnderPhone'>
+                <Toolbar className='repoTableTailUnderPhone'>
                     <Grid container columns={16}>
-                        <Grid item xs={6} className='repoTableGridPhone'> 
+                        <Grid item xs={6} className='repoTableTailGridPhone'> 
                             <p>Details</p>
                         </Grid>
                         <Grid item xs={10}>
@@ -208,10 +214,6 @@ export const RepoData = (props) => {
                                 </IconButton>
                             </Link>
                         </Grid>
-                    </Grid>
-                </Toolbar>
-                <Toolbar className='repoTableTailUnderPhone'>
-                    <Grid container columns={16}>
                     </Grid>
                 </Toolbar>
             </Collapse>

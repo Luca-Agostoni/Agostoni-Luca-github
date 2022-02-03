@@ -9,13 +9,13 @@ export const useRepos = () => {
 
     useEffect(() => {
         const populateRepos = async () => {
-        try {
-            setLoad(true);
-            setRepos(await listRepos());
-            setLoad(false);   
-        } catch (err) {
-            setOnError(true);
-        }
+            try {
+                setLoad(true);
+                setRepos(await listRepos());
+                setLoad(false);   
+            } catch (err) {
+                setOnError(true);
+            }
         }
         populateRepos();
     }, []) 
