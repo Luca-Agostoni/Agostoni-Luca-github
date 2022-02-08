@@ -42,7 +42,7 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(65, 105, 225, 0.904);
+    background: rgba(37, 73, 180, 0.904);
     border-radius: 5px;
   }
 .cardDetailsColonumLeft{  
@@ -70,6 +70,7 @@
     margin-top: 150px;
     background-color: rgb(65, 105, 225);
 }
+
 .fa-dot-circle-o{
     padding: 8px;
 }

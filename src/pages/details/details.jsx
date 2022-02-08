@@ -15,14 +15,9 @@ function Details() {
         repos.filter(repo=>
           (repo.repoName.includes(repositorie))
           ).map(repo => (
-            <CardDetails 
-              name={repo.name} 
-              surname={repo.surname} 
+            <CardDetails
               login={repo.login} 
               repoName={repo.repoName} 
-              link={repo.link}
-              creationDate={repo.creationDate}
-              lastUpdate={repo.lastUpdate}
               key={repo.link}                   
             />
               )

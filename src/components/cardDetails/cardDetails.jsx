@@ -9,8 +9,7 @@ import { DetailsContent } from '../detailsContent/detailsContent';
 export const CardDetails = (props) => {
 
     const {commits, loadCommits} = useCommits(props.login, props.repoName);
-
-
+    
     return(
         <>
         <div className="cardDetails">
@@ -29,7 +28,7 @@ export const CardDetails = (props) => {
                         commits.map(commit => (
                                     <DetailsContent
                                         message={commit.message}
-                                        key={commit.htmlUrlCommit}
+                                        key={commit.committer.date}
                                     />
                                 )
                             )  

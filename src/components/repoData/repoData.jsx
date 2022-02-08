@@ -42,13 +42,15 @@ const Backdrop = styled('div')`
 export const RepoData = (props) => {
     const {openDetail, handleClose, handleOpen} = useReposDetails();
     const [open, setOpen] = React.useState(false);
-
-    function checkModal (){
-        if (window.location.href === "http://localhost:3000/repos/casiraghi-davide-github"){
-            console.log("bubu");
-            handleOpen();  
-        }
-    }
+    // function getURL() {
+    //     console.log("The URL of this page is: " + window.location.href);
+    // }
+    // function checkModal (){
+    //     if (window.location.href === "http://localhost:3000/repos/casiraghi-davide-github"){
+    //         console.log("bubu");
+    //         handleOpen();  
+    //     }
+    // }
     function changeDate (date){
         const result = DateTime.fromISO(date).setLocale('it').toFormat('dd LLL yyyy');
         return result;
@@ -57,7 +59,7 @@ export const RepoData = (props) => {
     return(
         <>
             <div></div>
-            <Toolbar className='repoTable' >
+            <Toolbar className='repoTable'>
                     <Grid container columns={30}>
                         <Grid item xs={3} className='repoTableGrid'>
                             <p>{props.surname}</p> 
@@ -106,7 +108,7 @@ export const RepoData = (props) => {
                     BackdropComponent={Backdrop}
                 >
                     <div className="detailsBox">
-                        <Outlet/>
+                        <Outlet />
                     </div>
                 </StyledModal>
             </Link>
