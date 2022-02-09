@@ -49,3 +49,10 @@ export const Body = () => {
         </div>
     );
 }
+
+// PROVIDER
+// creare una cartella context con il file omonimo; 
+// verificare il login in App.js; 
+// inizializzare variabile user con il mock apposito (name, email, session);
+// settare il provider con la variabile di stato
+// leggere variabile in ogni pagina user dal context e se session vale false, meseguire un navigate su login

@@ -8,6 +8,16 @@
     background-color: white;
     text-align: center !important;
 }
+.cardDetailsTableDeatils{
+    font-size: 16px;
+    color: rgb(88, 127, 247) !important;
+    border-bottom: 0 !important;
+    border-left: solid 2px !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    background-color: rgb(241, 241, 241);
+    text-align: center !important;
+}
 .cardDetails{
     text-align: center !important;
     width: 80%;
@@ -25,6 +35,14 @@
     border-color: royalblue !important;
     height: 600px !important;
     overflow: auto !important; 
+}
+.categoryDetail{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    background-color: rgb(65, 105, 225);
 }
 .loadingGrid{
     text-align: center !important;
@@ -91,6 +109,9 @@
         padding-right: 5%;
         width: 90%;
     }
+    .cardDetailsTableDeatils{
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .cardDetails{
@@ -98,5 +119,11 @@
         padding-left: 5%;
         padding-right: 5%;
         width: 90%;
+    }
+    .categoryDetail{
+        width: 110px;
+    }
+    .cardDetailsTableDeatils{
+        font-size: 10px;
     }
 }

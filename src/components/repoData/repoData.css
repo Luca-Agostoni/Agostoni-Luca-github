@@ -106,12 +106,30 @@
     background-color: rgb(120, 149, 236)  !important;
     cursor: pointer;
 }
-
+.exitButton{
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: royalblue;
+    border: rgb(134, 163, 248) solid 2px;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+}
+.exitButton:hover{
+    background-color: rgb(134, 163, 248);
+}
 .detailsBox{
     height: 100%;
     width: 100% !important;
 }
-
+.exitButton{
+    background-color: royalblue !important;
+    color: white;
+}
 .buttonLinkRepoGit{
     background-color: royalblue !important;
     border: 0;

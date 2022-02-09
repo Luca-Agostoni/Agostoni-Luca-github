@@ -13,6 +13,7 @@ import { Link, Outlet } from 'react-router-dom';
 import { styled } from '@mui/system';
 import ModalUnstyled from '@mui/base/ModalUnstyled';
 import { useReposDetails } from '../../hooks/useReposDetails';
+import { useNavigate } from 'react-router-dom';
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -55,6 +56,7 @@ export const RepoData = (props) => {
         const result = DateTime.fromISO(date).setLocale('it').toFormat('dd LLL yyyy');
         return result;
     }
+    let navigate = useNavigate();
 
     return(
         <>
@@ -99,7 +101,6 @@ export const RepoData = (props) => {
                         </Grid>
                     </Grid>
             </Toolbar>
-            <Link to="/repos" className='linkPos' onClick={handleClose}>
                 <StyledModal
                     aria-labelledby="unstyled-modal-title"
                     aria-describedby="unstyled-modal-description"
@@ -107,11 +108,18 @@ export const RepoData = (props) => {
                     onClose={handleClose}
                     BackdropComponent={Backdrop}
                 >
+                    <>
+                    <button onClick={() => {
+                        handleClose();
+                        navigate("/repos");
+                      }} className="exitButton" >
+                          <i className="fa fa-close"></i>
+                      </button>
                     <div className="detailsBox">
-                        <Outlet />
+                    <Outlet />
                     </div>
+                    </>
                 </StyledModal>
-            </Link>
 
 {/* ////////////////////////////// */}
 

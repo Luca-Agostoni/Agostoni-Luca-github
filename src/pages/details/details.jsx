@@ -6,9 +6,13 @@ import {CardDetails} from '../../components/cardDetails/cardDetails';
 import { useReposDetails } from '../../hooks/useReposDetails';
 function Details() {
   const {repos} = useRepos();
+  
   let params = useParams();
+
   const repositorie = params.repoName;
+
   const {handleOpen} = useReposDetails();
+  
   return (
     <div className="details" onLoad={handleOpen}>
       {

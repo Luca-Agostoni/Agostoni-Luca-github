@@ -27,6 +27,9 @@ export const CardDetails = (props) => {
                     {
                         commits.map(commit => (
                                     <DetailsContent
+                                        date={commit.committer.date}
+                                        name={commit.committer.name}
+                                        email={commit.committer.email}
                                         message={commit.message}
                                         key={commit.committer.date}
                                     />
