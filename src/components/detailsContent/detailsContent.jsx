@@ -6,11 +6,15 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import React from 'react';
 import Collapse from '@mui/material/Collapse';
+import { DateTime } from 'luxon';
 
 export const DetailsContent = (props) => {
 
     const [open, setOpen] = React.useState(false);
-
+    function changeDate (date){
+        const result = DateTime.fromISO(date).setLocale('it').toFormat('dd LLL yyyy - t');
+        return result;
+    }
 
     return (
         <>
@@ -44,7 +48,7 @@ export const DetailsContent = (props) => {
                         </Grid>
                         <Grid item xs={5}>
                             <p>
-                                <b>{props.date}</b>
+                                <b>{changeDate(props.date)}</b>
                             </p>
                         </Grid>
                     </Grid>

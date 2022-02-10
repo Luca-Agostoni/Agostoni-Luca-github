@@ -9,21 +9,20 @@
     text-align: center !important;
 }
 .cardDetails{
+    padding-top: 4%;
+    height: 85% !important;
     text-align: center !important;
     width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
     align-content: center;
     justify-content: center;
     align-items: center !important;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    margin: auto !important;
 }
 .cardDetailsContent{
     text-align: center !important;
     border-right: solid 2px !important;
     border-color: royalblue !important;
-    height: 600px !important;
+    height: 90% !important;
     overflow: auto !important; 
 }
 .loadingGrid{
@@ -39,7 +38,7 @@
     border-top:  solid 0.5px rgb(173, 189, 236)!important;
     padding: 0 !important;
     min-height: 0 !important; 
-    height: 15px;
+    height: 3% !important;
     border-radius: 0 0 5px 5px;
     background-color: white;
 }
@@ -64,22 +63,18 @@
     padding: 0 !important;
     text-align: center !important;
     min-height: 0 !important; 
-    height: 50px !important;
+    height: 7% !important;
     border-radius: 5px 5px 0 0;
 }
 @media only screen and (max-width: 800px) {
     .cardDetails{
-        padding-top: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
         width: 90%;
+        padding-top: 15%;
     }
 }
 @media only screen and (max-width: 600px) {
     .cardDetails{
-        padding-top: 20%;
-        padding-left: 5%;
-        padding-right: 5%;
         width: 90%;
+        padding-top: 20%;
     }
 }

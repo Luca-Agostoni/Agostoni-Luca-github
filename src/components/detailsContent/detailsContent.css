@@ -1,13 +1,4 @@
-.cardDetailsTable{
-    color: rgb(88, 127, 247) !important;
-    border-bottom: 0 !important;
-    border-left: solid 2px !important;
-    border-top:  solid 0.5px rgb(173, 189, 236)!important;
-    padding: 0 !important;
-    min-height: 0 !important;
-    background-color: white;
-    text-align: center !important;
-}
+
 .cardDetailsTableDeatils{
     font-size: 16px;
     color: rgb(88, 127, 247) !important;
@@ -18,31 +9,16 @@
     background-color: rgb(241, 241, 241);
     text-align: center !important;
 }
-.cardDetails{
-    text-align: center !important;
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    align-content: center;
-    justify-content: center;
-    align-items: center !important;
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-.cardDetailsContent{
-    text-align: center !important;
-    border-right: solid 2px !important;
-    border-color: royalblue !important;
-    height: 600px !important;
-    overflow: auto !important; 
-}
+
 .categoryDetail{
     margin-left: auto !important;
     margin-right: auto !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
     border-radius: 5px;
     color: white;
     width: 150px;
-    background-color: rgb(65, 105, 225);
+    background-color: rgb(99, 132, 230);
 }
 .loadingGrid{
     text-align: center !important;
@@ -63,20 +39,6 @@
     background: rgba(37, 73, 180, 0.904);
     border-radius: 5px;
   }
-.cardDetailsColonumLeft{  
-    text-align: center !important;
-    color: black !important;
-}
-.cardDetailsTableFinal{
-    color: rgb(88, 127, 247) !important;
-    border: solid 2px !important;
-    border-top:  solid 0.5px rgb(173, 189, 236)!important;
-    padding: 0 !important;
-    min-height: 0 !important; 
-    height: 15px;
-    border-radius: 0 0 5px 5px;
-    background-color: white;
-}
 .divWaitCommits{
     margin: auto;
     text-align: center;
@@ -92,34 +54,13 @@
 .fa-dot-circle-o{
     padding: 8px;
 }
-.cardDetailsTableHead{
-    width: 100% !important;
-    color: white !important;
-    background-color: royalblue !important;
-    padding: 0 !important;
-    text-align: center !important;
-    min-height: 0 !important; 
-    height: 50px !important;
-    border-radius: 5px 5px 0 0;
-}
+
 @media only screen and (max-width: 800px) {
-    .cardDetails{
-        padding-top: 15%;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
-    }
     .cardDetailsTableDeatils{
         font-size: 12px;
     }
 }
 @media only screen and (max-width: 600px) {
-    .cardDetails{
-        padding-top: 20%;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
-    }
     .categoryDetail{
         width: 110px;
     }

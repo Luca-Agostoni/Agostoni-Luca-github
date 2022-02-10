@@ -43,15 +43,6 @@ const Backdrop = styled('div')`
 export const RepoData = (props) => {
     const {openDetail, handleClose, handleOpen} = useReposDetails();
     const [open, setOpen] = React.useState(false);
-    // function getURL() {
-    //     console.log("The URL of this page is: " + window.location.href);
-    // }
-    // function checkModal (){
-    //     if (window.location.href === "http://localhost:3000/repos/casiraghi-davide-github"){
-    //         console.log("bubu");
-    //         handleOpen();  
-    //     }
-    // }
     function changeDate (date){
         const result = DateTime.fromISO(date).setLocale('it').toFormat('dd LLL yyyy');
         return result;
@@ -102,6 +93,7 @@ export const RepoData = (props) => {
                     </Grid>
             </Toolbar>
                 <StyledModal
+                    className="modalDetail"
                     aria-labelledby="unstyled-modal-title"
                     aria-describedby="unstyled-modal-description"
                     open={openDetail}
@@ -141,7 +133,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableGridPhone'> 
-                            <p>Surname</p>
+                            <p className='categoryDetail'>Surname</p>
                         </Grid>
                         <Grid item xs={10}>
                             <p><b>{props.surname}</b></p> 
@@ -151,7 +143,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableGridPhone'> 
-                            <p>Name</p>
+                            <p className='categoryDetail'>Name</p>
                         </Grid>
                         <Grid item xs={10}>
                             <p><b>{props.name}</b></p> 
@@ -161,7 +153,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableGridPhone'> 
-                            <p>Login</p>
+                            <p className='categoryDetail'>Login</p>
                         </Grid>
                         <Grid item xs={10}> 
                             <p><b>{props.login}</b></p>
@@ -171,7 +163,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableGridPhone'> 
-                            <p>Link</p>
+                            <p className='categoryDetail'>Link</p>
                         </Grid>
                         <Grid item xs={10} className='repoTableGridLinkPhone'>
                                 <a href={props.link}>
@@ -185,7 +177,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableGridPhone'> 
-                            <p>Commits</p>
+                            <p className='categoryDetail'>Commits</p>
                         </Grid>
                         <Grid item xs={10}>
                             <p><b>4</b></p>
@@ -195,7 +187,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableGridPhone'> 
-                            <p>Creation Date</p>
+                            <p className='categoryDetail'>Creation Date</p>
                         </Grid>
                         <Grid item xs={10}>
                             <p><b>{changeDate(props.creationDate)}</b></p>
@@ -205,7 +197,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableGridPhone'> 
-                            <p>Last Update</p>
+                            <p className='categoryDetail'>Last Update</p>
                         </Grid>
                         <Grid item xs={10}> 
                             <p><b>{changeDate(props.lastUpdate)}</b></p>
@@ -215,7 +207,7 @@ export const RepoData = (props) => {
                 <Toolbar className='repoTableTailUnderPhone'>
                     <Grid container columns={16}>
                         <Grid item xs={6} className='repoTableTailGridPhone'> 
-                            <p>Details</p>
+                            <p className='categoryDetail'>Details</p>
                         </Grid>
                         <Grid item xs={10}>
                             <Link to={props.repoName} onClick={handleOpen}>

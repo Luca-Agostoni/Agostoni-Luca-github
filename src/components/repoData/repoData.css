@@ -54,7 +54,7 @@
     background-color: rgb(243, 243, 243);
     border-bottom: 0 !important;
     border-right: solid 2px !important;
-    border-top:  solid 0.5px rgb(149, 171, 238)!important;
+    border-left: solid 2px !important;
     padding: 0 !important;
     display: none !important;
     min-height: 0 !important;
@@ -65,7 +65,7 @@
     color: rgb(88, 127, 247) !important;
     background-color: rgb(243, 243, 243);
     border-right: solid 2px !important;
-    border-top:  solid 0.5px rgb(149, 171, 238)!important;
+    border-left: solid 2px !important;
     padding: 0 !important;
     display: none !important;
     min-height: 0 !important;
@@ -76,13 +76,11 @@
 .repoTableGridPhone{
     height: 100% !important;
     color: white !important;
-    background-color: royalblue;
 }
 .repoTableTailGridPhone{
     border-radius: 0 0 0 5px !important;
     height: 100% !important;
     color: white !important;
-    background-color: royalblue;
 }
 .fa-github{
     font-size: 20px;
@@ -119,10 +117,14 @@
     outline: none;
     cursor: pointer;
 }
+.modalDetails{
+    position: absolute !important;
+}
 .exitButton:hover{
-    background-color: rgb(134, 163, 248);
+    background-color: rgb(134, 163, 248) !important;
 }
 .detailsBox{
+    position: absolute !important;
     height: 100%;
     width: 100% !important;
 }
