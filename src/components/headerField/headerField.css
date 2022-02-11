@@ -30,22 +30,23 @@
 .gridButton{
     display: flex;
 }
+.logoPhone{
+    margin: 1%;
+    height: 80px;
+}
 @media only screen and (max-width: 780px) {
-    .fa-github-square{
-        padding-top: 8px;
-        padding-bottom: 8px;
-        font-size: 70px;
-    }
 }
 @media only screen and (max-width: 800px) {
-    .fa-github-square{
-        font-size: 70px;
-        margin: 1%;
-    }
     .Header{
         display: none !important;
     }
     .headerPhone{
         display: block !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .logoPhone{
+        margin: 3%;
+        height: 60px;
     }
 }

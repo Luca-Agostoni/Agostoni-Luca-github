@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useRepos } from '../../hooks/useRepos';
 import {CardDetails} from '../../components/cardDetails/cardDetails';
 import { useReposDetails } from '../../hooks/useReposDetails';
-function Details() {
+function Details(props) {
   const {repos} = useRepos();
   
   let params = useParams();
@@ -15,6 +15,7 @@ function Details() {
   
   return (
     <div className="details" onLoad={handleOpen}>
+      
       {
         repos.filter(repo=>
           (repo.repoName.includes(repositorie))

@@ -18,6 +18,6 @@ export const useCommits = (owner, repo) => {
             }
         }
         populateCommits();
-    }, []) 
+    }, [owner, repo]) 
     return {commits, loadCommits, setLoadCommits, setCommits, onErrorCommits, useEffect}
 }

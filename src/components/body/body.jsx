@@ -17,8 +17,6 @@ export const Body = () => {
                 <div className="formBodySecond">
                     <TopField totRepos={repos.length} setSearchDataOut={setSearchDataOut}/>
                         <button className="updateButton" onClick={useEffect}>
-                            <div></div>
-                            <b className='reloadText'>Reload repos</b>
                             <i className="fa fa-repeat"></i>
                         </button>
                         <RepoField repos={repos}  searchDataOut={searchDataOut} dataRepositorie={repos}/>

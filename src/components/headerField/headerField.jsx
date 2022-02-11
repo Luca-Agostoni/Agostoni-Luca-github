@@ -2,6 +2,7 @@ import './headerField.css';
 import {Links} from "../links/links"
 import { Toolbar } from '@mui/material';
 import { Grid } from '@mui/material';
+import ttflogo from '../images/ttflogo.png';
 
 export const HeaderField = () => {
     return(
@@ -9,10 +10,10 @@ export const HeaderField = () => {
             <div className='divHeader'>
                 <Toolbar className='Header'>
                     <Grid container spacing={1}>
-                        <Grid item xs={1} className="gridLogo">
-                            <i className="fa fa-github-square"></i>
+                        <Grid item xs={2} className="gridLogo">
+                            <img src={ttflogo} alt="ttflogo" height="50px" />
                         </Grid>
-                        <Grid item xs={4}>  
+                        <Grid item xs={3}>  
                         </Grid>
                         <Grid item xs={7} className='gridButton'>
                             <Links/>
@@ -22,7 +23,7 @@ export const HeaderField = () => {
                 <Toolbar className='headerPhone'>
                     <Grid container spacing={1}>
                         <Grid item className="gridLogo" xs={12}>
-                            <i className="fa fa-github-square"></i>
+                            <img src={ttflogo} alt="ttflogo" className="logoPhone"/>
                         </Grid>
                     </Grid>
                 </Toolbar>

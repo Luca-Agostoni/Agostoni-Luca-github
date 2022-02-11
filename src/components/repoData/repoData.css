@@ -59,6 +59,24 @@
     display: none !important;
     min-height: 0 !important;
 }
+.iconWaitCommitLength{
+    width: 20px !important;
+    height: 20px !important;
+}
+.divWaitCommitLength{
+    margin: auto !important;
+    margin-top: 12% !important;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 30px !important;
+    height: 25px !important;
+    border-radius: 10px;
+    background-color: rgb(65, 105, 225);
+}
+.divButtonLinkRepo{
+    margin: auto !important;
+    margin-top: 6.5% !important;
+}
 .repoTableTailUnderPhone{
     border-radius: 0 0 5px 5px !important;
     border-bottom: solid 2px !important;
