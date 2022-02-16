@@ -20,30 +20,30 @@
 .linkTxt{
     margin: 0 !important;
 }
-.fa-home{
-    padding-top: 3px;
+.fa-house-chimney{
+    padding-top: 6px;
     color: white !important;
-    font-size: 20px;
+    font-size: 18px;
 }
 #fa-user{
-    padding-top: 4px;
+    padding-top: 6px;
     color: white !important;
     font-size: 18px;
 }
 .fa-users{
-    padding-top: 5px;
+    padding-top: 6px;
     color: white !important;
-    font-size: 17px;
+    font-size: 18px;
 }
 .fa-user-plus{
-    padding-top: 5px;
+    padding-top: 7px;
     color: white !important;
     font-size: 17px;
 }
-.fa-sign-out{
-    padding-top: 4px;
+.fa-arrow-right-from-bracket{    
+    padding-top: 6px;
     color: white !important;
-    font-size: 20px;  
+    font-size: 18px;  
 }
 .buttonLink{
     padding-top: 8px;
@@ -67,8 +67,8 @@
     .linkSection{
         min-width: 0 !important;
     }
-    .fa-home{
-        font-size: 25px;
+    .fa-house-chimney{
+        font-size: 20px;
     }
     #fa-user{
         font-size: 22px;
@@ -87,6 +87,16 @@
     }
     .formLinks{
         padding: 0;
+    }
+    .fa-users{
+        padding-top: 6px;
+        color: white !important;
+        font-size: 23px;
+    }
+    .fa-arrow-right-from-bracket{    
+        padding-top: 6px;
+        color: white !important;
+        font-size: 23px;  
     }
 }
 

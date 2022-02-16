@@ -147,6 +147,8 @@
     width: 100% !important;
 }
 .exitButton{
+    
+    padding-top: 3px;
     background-color: royalblue !important;
     color: white;
 }

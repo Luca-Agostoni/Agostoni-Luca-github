@@ -9,9 +9,13 @@ import { Grid } from '@mui/material';
 
 
 export const LoginField = () => {
+
     const {session, setSession } = useContext(UserContext);
+
     const [email, setEmail] = useState("");
+
     const [login, setLogin] = useState("");
+
     let navigate = useNavigate();
 
     const handleEmailChange = (event) => {
@@ -45,12 +49,22 @@ export const LoginField = () => {
         <div className='loginField'>
             <img src={ttflogo} alt="ttflogo" className='logoLogin' height="50px" />
             <Grid container columns={20}>
-                <Grid item xs={20}>
+                <Grid item xs={3}>
+                    <div className='inputFieldLogo'>
+                    <i className="fa fa-user" id='fa-user-login'></i>
+                    </div>
+                </Grid>
+                <Grid item xs={17}>
                     <input className='inputField' placeholder="Insert login"  onChange={handleLoginChange} value={login}/>
                 </Grid>
             </Grid>
             <Grid container columns={20}>
-                <Grid item xs={20}>
+                <Grid item xs={3}>
+                    <div className='inputFieldLogo'>
+                        <i class="fa-solid fa-envelope" id='fa-envelope-login'></i>
+                    </div>
+                </Grid>
+                <Grid item xs={17}>
                     <input className='inputField' placeholder="Insert email"  onChange={handleEmailChange} value={email}/>
                 </Grid>
             </Grid>
