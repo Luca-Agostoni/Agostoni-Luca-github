@@ -1,0 +1,22 @@
+[
+    {
+        "nome" : "luca",
+        "email" : "luca@email",
+        "session" : true
+    },
+    {
+        "nome" : "paolo",
+        "email" : "paolo@email",
+        "session" : true
+    },
+    {
+        "nome" : "mario",
+        "email" : "mario@email",
+        "session" : false
+    },
+    {
+        "nome" : "samuele",
+        "email" : "samuele@email",
+        "session" : false
+    }
+]

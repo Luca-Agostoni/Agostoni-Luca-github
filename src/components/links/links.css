@@ -25,7 +25,7 @@
     color: white !important;
     font-size: 20px;
 }
-.fa-user{
+#fa-user{
     padding-top: 4px;
     color: white !important;
     font-size: 18px;
@@ -70,7 +70,7 @@
     .fa-home{
         font-size: 25px;
     }
-    .fa-user{
+    #fa-user{
         font-size: 22px;
     }
     .fa-user-plus{

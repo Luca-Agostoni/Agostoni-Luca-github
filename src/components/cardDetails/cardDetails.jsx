@@ -7,7 +7,6 @@ import React from 'react';
 import { DetailsContent } from '../detailsContent/detailsContent';
 
 export const CardDetails = (props) => {
-
     const {commits, loadCommits} = useCommits(props.login, props.repoName);
     
     return(

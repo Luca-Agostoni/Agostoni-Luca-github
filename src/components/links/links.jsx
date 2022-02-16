@@ -96,7 +96,7 @@ export const Links = () => {
                         onMouseEnter={handlePopoverOpenLogin}
                         onMouseLeave={handlePopoverCloseLogin}
                     >
-                        <i className="fa fa-user"></i>
+                        <i className="fa fa-user" id='fa-user'></i>
                     </Link>
                     <Popover
                         id="mouse-over-popover"

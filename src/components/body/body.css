@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-top: 6%;
+    padding-top: 5%;
 }
 .formBodySecond{
     width: 100%;
@@ -82,11 +82,11 @@
 }
 @media only screen and (max-width: 800px) {
     .formBodyFirst{
-        padding-top: 17%;
+        padding-top: 15%;
     }
 }
 @media only screen and (max-width: 500px) {
     .formBodyFirst{
-        padding-top: 25%;
+        padding-top: 23%;
     }
 }

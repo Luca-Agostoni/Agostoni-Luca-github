@@ -1,13 +1,12 @@
 import './login.css';
 import * as React from 'react';
-import { Link } from "react-router-dom";
+import { LoginField } from '../../components/loginField/loginField';
 
 
 function Login() {
   return (
     <div className="login">
-      <h2>LOGIN</h2>
-      <Link to ="/">Home</Link>
+      <LoginField/>
     </div>
   );
 }
