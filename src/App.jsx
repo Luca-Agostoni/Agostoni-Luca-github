@@ -3,18 +3,20 @@ import './App.css';
 import * as React from 'react';
 import { Outlet } from 'react-router-dom';
 import UserContext from './context/userContext';
-import { useState } from 'react';
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function App() {
 
-  const [session, setSession] = useState({session: true});
+  var {session, setSession} = useContext(UserContext);
 
   const value = {session, setSession};
 
+  console.log(UserContext);
+
   const navigate = useNavigate();
 
-  if (!session.session) {
+  if (session === false) {
     navigate('/login');
   }
 
