@@ -10,7 +10,7 @@ import { Grid } from '@mui/material';
 
 export const LoginField = () => {
 
-    var {session, setSession } = useContext(UserContext);
+    const {session, setSession } = useContext(UserContext);
 
     const [email, setEmail] = useState("");
 
@@ -34,7 +34,7 @@ export const LoginField = () => {
             }
         }
         if (check === true){
-            setSession();
+            setSession(true);
             navigate("/repos");
             console.log(session)
         }
