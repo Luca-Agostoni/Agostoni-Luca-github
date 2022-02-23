@@ -3,17 +3,13 @@ import './App.css';
 import * as React from 'react';
 import { Outlet } from 'react-router-dom';
 import UserContext from './context/userContext';
-import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
 
 function App() {
 
-  var {session, setSession} = useContext(UserContext);
-
-  const value = {session, setSession};
-
-  console.log(UserContext);
-
+  var {session, setSession } = useContext(UserContext);
+  
   const navigate = useNavigate();
 
   if (session === false) {
@@ -21,7 +17,7 @@ function App() {
   }
 
   return (
-    <UserContext.Provider value={value}>
+    <UserContext.Provider value={{session, setSession}}>
       <div className="App">
         <HeaderField/>
         <Outlet/>

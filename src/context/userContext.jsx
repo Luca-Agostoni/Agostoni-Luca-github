@@ -2,7 +2,7 @@ import React from "react";
 
 const UserContext = React.createContext(
     {
-        session: false,
+        session: true,
         setSession: () => {}
     }
 );

@@ -180,7 +180,7 @@ export const Links = () => {
                     </Popover>
                 </Button>
                 <Button className="linkSection">
-                    <Link to="logout" className="buttonLink"
+                    <Link to="login" className="buttonLink"
                         aria-owns={openLogout ? 'mouse-over-popover' : undefined}
                         aria-haspopup="true"
                         onMouseEnter={handlePopoverOpenLogout}

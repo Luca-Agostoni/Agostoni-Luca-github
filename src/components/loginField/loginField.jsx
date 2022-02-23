@@ -34,7 +34,7 @@ export const LoginField = () => {
             }
         }
         if (check === true){
-            setSession(session = true);
+            setSession();
             navigate("/repos");
             console.log(session)
         }
