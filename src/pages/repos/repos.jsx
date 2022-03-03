@@ -19,7 +19,7 @@ function Repos() {
   return (
     <>
       <Body>
-      <Outlet/>
+        <Outlet/>
       </Body>
     </>
   );

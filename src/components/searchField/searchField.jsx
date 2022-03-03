@@ -45,7 +45,7 @@ const Search = styled('div')(({ theme }) => ({
 
 
 export const SearchField = (props) => {
-  
+
   const searchFiltered = (props) => {
     const searchData = document.getElementById("search").value;
     props.setSearchDataOut(searchData);

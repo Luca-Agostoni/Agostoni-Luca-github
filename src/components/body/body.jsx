@@ -4,11 +4,25 @@ import {RepoField} from '../repoField/repoField';
 import { useState } from 'react';
 import { CircularProgress } from '@mui/material';
 import { useRepos } from '../../hooks/useRepos';
+import { useNavigate } from 'react-router-dom';
+import { useLog } from '../../hooks/useLog';
 
 export const Body = () => {
     const {repos, onError, load, useEffect} = useRepos();
     const [searchDataOut, setSearchDataOut] = useState('');
 
+    let navigate = useNavigate();
+
+    const { session, route } = useLog();
+
+    useEffect(() => {
+        const isLog = () => {
+            if (session === false) {
+                navigate(route);
+            }
+        }
+        isLog();
+    }, [navigate, session, route]);
     
     return(
         <div className='formBodyFirst'>
@@ -32,25 +46,9 @@ export const Body = () => {
                 </div>             
             )
         }
-        {/* {load &&
-            (
-                <div className='divloading'>
-                    <div className='divLoad'>
-                        <CircularProgress className="iconWait" />
-                    </div>             
-                </div>
-            )               
-        } */}
         {onError &&
             <p>Error</p>
         }
         </div>
     );
 }
-
-// PROVIDER
-// creare una cartella context con il file omonimo; 
-// verificare il login in App.js; 
-// inizializzare variabile user con il mock apposito (name, email, session);
-// settare il provider con la variabile di stato
-// leggere variabile in ogni pagina user dal context e se session vale false, meseguire un navigate su login

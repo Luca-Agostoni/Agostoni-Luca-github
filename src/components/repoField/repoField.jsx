@@ -98,20 +98,3 @@ export const RepoField = (props) => {
         </>
     );
 }
-// {
-//     repos.filter(repo=>
-//     (repo.repoName.includes(searchDataPhone))
-//     ).map(repo => (
-//             <RepoData 
-//                 name={repo.name} 
-//                 surname={repo.surname} 
-//                 login={repo.login} 
-//                 repoName={repo.repoName} 
-//                 link={repo.link}
-//                 creationDate={repo.creationDate}
-//                 lastUpdate={repo.lastUpdate}
-//                 key={repo.link}
-//             />
-//         )
-//     )
-// }

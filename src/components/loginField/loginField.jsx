@@ -1,16 +1,15 @@
 import './loginField.css';
-import UserContext from '../../context/userContext';
-import { useContext } from 'react';
 import { useState } from 'react';
 import ttflogo from '../images/ttflogo2.png';
 import usersData from '../../api/mock/users.json';
 import { useNavigate } from 'react-router-dom';
 import { Grid } from '@mui/material';
+import { useLog } from '../../hooks/useLog';
 
 
 export const LoginField = () => {
 
-    const {session, setSession } = useContext(UserContext);
+    const { session, setSession } = useLog();
 
     const [email, setEmail] = useState("");
 
@@ -34,13 +33,13 @@ export const LoginField = () => {
             }
         }
         if (check === true){
-            setSession(true);
+            setSession();
             navigate("/repos");
-            console.log(session)
         }
         if (check === false){
             alert("User name or email are wrong!");
-        }
+        }console.log(session);
+        return session;
     }
 
     
